@@ -3,7 +3,7 @@ tagline: Take your first steps in modern frontend development
 description: HuH
 template:
   name: intro-react
-  repo: intro-to-react
+  repo: react-template
   description: "A robot powered training repository :robot:"
 before:
   - type: createIssue
