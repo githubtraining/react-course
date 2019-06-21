@@ -1,0 +1,19 @@
+title: Introduction to React
+tagline: Take your first steps in modern frontend development
+description: HuH
+template:
+  name: intro-react
+  repo: intro-to-react
+  description: "A robot powered training repository :robot:"
+before:
+  - type: createIssue
+    title: Welcome
+    body: 01-welcome.md
+
+steps:
+  - title: do step 1
+    description: Do some stuff 1
+    event: push
+    actions:
+      - type: respond
+        with: 01-next.md 
