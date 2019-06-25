@@ -11,9 +11,9 @@ before:
     body: 00-setup.md
 steps:
   - title: Clone the Repo
-    description: Welcome to React! Let's get started with our project.
+    description: "Welcome to React! Let's get started with our project."
     event: push
     actions:
       - type: respond
         with: 01-components.md
-        issue: 1
+        issue: Welcome to React
