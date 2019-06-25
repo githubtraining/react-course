@@ -1,20 +1,19 @@
 title: Introduction to React
 tagline: Take your first steps in modern frontend development
-description: HuH
+description: Learn React
 template:
   name: intro-react
   repo: react-template
-  description: "A robot powered training repository :robot:"
+  description: 'A robot powered training repository :robot:'
 before:
   - type: createIssue
-    title: Welcome
-    body: 01-welcome.md
-
+    title: Welcome to React
+    body: 00-setup.md
 steps:
-  - title: do step 1
-    description: Do some stuff 1
+  - title: Clone the Repo
+    description: Welcome to React! Let's get started with our project.
     event: push
     actions:
       - type: respond
-        with: 01-next.md 
-        issue: Welcome
+        with: 01-components.md
+        issue: Welcome to React
