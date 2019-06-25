@@ -16,7 +16,7 @@ steps:
     actions:
       - type: gate
         left: '%payload.ref%'
-        right: ref/heads/changes
+        right: refs/heads/changes
         operator: ===
         every: true
       - type: respond
