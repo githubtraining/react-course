@@ -16,4 +16,4 @@ steps:
     actions:
       - type: respond
         with: 01-components.md
-        issue: Welcome to React
+        issue: 1
