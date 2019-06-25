@@ -10,7 +10,7 @@ before:
     title: Welcome to React
     body: 00-setup.md
 steps:
-  - title: Clone the Repo
+  - title: Setup and Components
     description: Welcome to React! Let's get started with our project.
     event: push
     actions:
@@ -18,7 +18,39 @@ steps:
         left: '%payload.ref%'
         right: refs/heads/changes
         operator: ===
-        every: true
       - type: respond
         with: 01-components.md
         issue: Welcome to React
+  - title: Props
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: respond
+        with: 02-props.md
+        issue: Welcome to React
+    description: Learn how to pass data to child components
+    event: push
+  - title: State
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: respond
+        with: 03-state.md
+        issue: Welcome to React
+    description: Learn how to deal with dynamic data
+    event: push
+  - title: Callback Functions
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: respond
+        with: 04-callbackfunctions.md
+        issue: Welcome to React
+    description: Learn how to pass data back to parent components
+    event: push
