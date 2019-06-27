@@ -43,6 +43,10 @@ In our `render` method we see that `handleButtonClicked` is called when each but
 
 We are going to set some state in next steps.
 
+### What your code should look like
+
+`[ADD SCREEN VID]`
+
 ### Push your code
 To push your code to Github, run the following lines inside the repo folder in your terminal.
 

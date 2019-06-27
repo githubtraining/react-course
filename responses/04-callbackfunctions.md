@@ -120,6 +120,10 @@ Uncomment this last chunk of code!
 ### Run your code
 To run your code, move inside your repo folder in your terminal and run `npm start`
 
+### What your code should look like
+
+`[ADD SCREEN VID]`
+
 ### Push your code
 To push your code to Github, run the following lines inside the repo folder in your terminal.
 
