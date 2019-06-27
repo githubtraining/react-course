@@ -45,6 +45,10 @@ go ahead and uncomment the following chunk of code
 
 To run your code, move inside your repo folder in your terminal and run `npm start`
 
+### What your code should look like
+
+`[ADD SCREEN VID]`
+
 ### Code Explanation
 
 Let's take a look at what this code means. Basically, what it is saying is that when we click the `Assignments` button, the list for assignments will be assigned to the variable `tabChoice`. In our `render` method, we see that `tabChoice` is rendered.

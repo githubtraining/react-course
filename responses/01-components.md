@@ -23,6 +23,10 @@ Let's add a couple of child components and give our app a header and a footer.
 ### Run your code
 To run your code, inside your repo folder in your termainal run `npm start`.
 
+### What your code should look like
+
+`[ADD SCREEN VID]`
+
 ### Push your code
 Let's push your code to GitHub
 
