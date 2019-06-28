@@ -4,7 +4,7 @@ React apps are made up of components. Think of components as different parts of 
 
 [ADD IMAGE HERE]
 
-Take a look at the following line in `App.js`. 
+Take a look at the following line in `App.jsx`. 
 
 ```javascript
 class App extends React.Component
@@ -14,10 +14,20 @@ This line is saying that we are taking all the properties a component has and cr
 
 
 ### Add some code
-Let's add a couple of child components and give our app a header and a footer.
+Let's add a couple of child components and give our app a header.
 
 
-[ADD CODE TO ADD HERE]
+Where it says:
+
+```
+{/* Replace this line with the proper header code for Step 1 */}
+```
+
+Replace that with this header component:
+
+```jsx
+<h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
+```
 
 
 ### Run your code
