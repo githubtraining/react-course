@@ -9,6 +9,9 @@ before:
   - type: createIssue
     title: Welcome to React
     body: 00-setup.md
+    comments:
+      - test.md
+
 steps:
   - title: Setup and Components
     description: Welcome to React! Let's get started with our project.
