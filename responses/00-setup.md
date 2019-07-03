@@ -12,9 +12,9 @@ If you understand the topics above, you can start learning modern frontend devel
 
 So why do we learn React?
 
-React has growing popularity in the tech industry because of it's simplicity. With a simple knowledge of HTML and Javascript, picking up React shouldn't be too bad.
+React has growing popularity in the tech industry because of its simplicity. With a simple knowledge of HTML and Javascript, picking up React shouldn't be too bad.
 
-### What will we be building
+### What we will be building
 
 So what are we going to be building today? We are going to build a gradebook for teachers! Take a look at `deployed link here`. Here's a recording of the finished app.
 
