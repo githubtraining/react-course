@@ -8,7 +8,7 @@ Static data doesn't change, hence the name static. Things like a title on a page
 
 Dynamic data, on the other hand, is data that does change because we can change it by adding an item to the list. Our list of assignments would be considered dynamic data. But how do we deal with dyanmic data in React? We can't just dump it in a component, because how will we tell the data to change?
 
-In React, we store dynamic data in **state variables**. Let's take a look at how we store state variables. In `App.js`, take a look at the constructor. You'll see that we declare our state variables using `this.state = {.....}`.
+In React, we store dynamic data in **state variables**. Let's take a look at how we store state variables. In `App.jsx`, take a look at the constructor. You'll see that we declare our state variables using `this.state = {.....}`.
 
 [PUT THE CODE HERE]
 
@@ -27,7 +27,7 @@ Unfortunatley, we can't just do `this.state.studentsList = .....` to change data
 
 To set the state of a state variable we have to use the method, `this.setState`.
 
-Take a look at the following code in `App.js`
+Take a look at the following code in `App.jsx`
 
 ```
 handleButtonClicked(buttonName) {

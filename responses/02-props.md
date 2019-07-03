@@ -16,7 +16,7 @@ Navigate to `List.jsx`. You'll see that we made our own component, `List`.
 
 Let's go ahead and import that component.
 
-At the top of `App.js`, on line 3, add
+At the top of `App.jsx`, on line 3, add
 
 ```js
 import List from "./List";

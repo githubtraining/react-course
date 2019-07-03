@@ -6,7 +6,7 @@ The last thing you need to know before you can call yourself a React Developer i
 
 With callback functions, we are able to do just that. Basically, we pass a function as a prop, and then the child component can call the function that was defined in the parent. Yeah, that's confusing. Let's look at an example.
 
-Take a look at this code in `App.js`
+Take a look at this code in `App.jsx`
 ```jsx
 addAssignment(assignmentName) {
     this.setState({
@@ -54,7 +54,7 @@ It looks like when the submit button is clicked, we call the `addFunction` with 
 ### Add some code
 Now that we see how it works with assignments, let's try it with students! 
 
-Below this line of code in `App.js`
+Below this line of code in `App.jsx`
 ```
   /*Write an addStudent function here for step 4*/
 ```
