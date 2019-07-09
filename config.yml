@@ -22,8 +22,8 @@ steps:
         right: refs/heads/changes
         operator: ===
       - type: createPullRequest
-  		  title: Title of the Pull Request
-  		  body: 01-components.md
+        title: Title of the Pull Request
+        body: 01-components.md
         head: changes
   - title: Props
     actions:
