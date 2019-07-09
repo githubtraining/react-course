@@ -25,10 +25,15 @@ steps:
         title: Title
         body: 01-components.md
         head: changes
-      - type: createPullRequestComment
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR.data.head.repo.owner.login%'
+        repo: '%actions.metaPR.data.head.repo.name%'
+        number: '%actions.metaPR.data.number%'
+        commit_id: '%actions.metaPR.data.head.sha%'
+        path: config.yml
         body: add-component.md
-        file: src/App.jsx
-        position: 91
+        position: 6
   - title: Props
     actions:
       - type: gate
