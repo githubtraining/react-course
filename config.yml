@@ -30,7 +30,6 @@ steps:
         owner: '%actions.metaPR.data.head.repo.owner.login%'
         repo: '%actions.metaPR.data.head.repo.name%'
         number: '%actions.metaPR.data.number%'
-        commit_id: '%actions.metaPR.data.head.sha%'
         path: config.yml
         body: add-component.md
         position: 6
