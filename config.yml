@@ -21,9 +21,10 @@ steps:
         left: '%payload.ref%'
         right: refs/heads/changes
         operator: ===
-      - type: respond
-        with: 01-components.md
-        issue: Welcome to React
+      - type: createPullRequest
+  		title: Title of the Pull Request
+  		body: 01-components.md
+        head: changes
   - title: Props
     actions:
       - type: gate
