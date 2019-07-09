@@ -25,6 +25,10 @@ steps:
         title: Title of the Pull Request
         body: 01-components.md
         head: changes
+      - type: createPullRequestComment
+        body: add-component.md
+        file: src/App.jsx
+        position: 91
   - title: Props
     actions:
       - type: gate
