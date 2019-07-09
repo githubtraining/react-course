@@ -32,6 +32,7 @@ steps:
         repo: '%actions.metaPR.data.head.repo.name%'
         number: '%actions.metaPR.data.number%'
         commit_id: '%actions.metaPR.data.head.sha%'
+        path: src/App.jsx
         body: add-component.md
         position: 6
   - title: Props
