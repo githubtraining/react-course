@@ -22,10 +22,11 @@ steps:
         right: refs/heads/changes
         operator: ===
       - type: createPullRequest
-        title: Title of the Pull Request
+        title: Title
         body: 01-components.md
         head: changes
       - type: createPullRequestComment
+        pullRequest: Title
         body: add-component.md
         file: src/App.jsx
         position: 91
