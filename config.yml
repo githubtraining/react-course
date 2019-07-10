@@ -34,7 +34,7 @@ steps:
         commit_id: '%actions.metaPR.data.head.sha%'
         path: src/App.jsx
         body: add-component.md
-        position: 15
+        position: 55
   - title: Props
     actions:
       - type: gate
