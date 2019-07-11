@@ -34,18 +34,59 @@ steps:
         commit_id: '%actions.metaPR.data.head.sha%'
         path: src/App.jsx
         body: |
-            ## hello
-            HELLO
-        position: 3
+            ### Add some code
+            Let's add a couple of child components and give our app a header.
+
+            Replace the line where it says to replace with this header component:
+
+            ```jsx
+            <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
+            ```
+
+            ### Run your code
+            To run your code, inside your repo folder in your termainal run `npm start`.
+
+            ### What your code should look like
+
+            `[ADD SCREEN VID]`
+
+            ### Push your code
+            Let's push your code to GitHub
+
+            Run the following lines inside your repo folder in your terminal.
+
+            ```
+            git add src/App.jsx
+            git commit -m "added a header and footer"
+            git push origin changes
+            ```
+        position: 6
   - title: Props
     actions:
       - type: gate
         left: '%payload.ref%'
         operator: ===
         right: refs/heads/changes
-      - type: respond
-        with: 02-props.md
-        issue: Welcome to React
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR.data.head.repo.owner.login%'
+        repo: '%actions.metaPR.data.head.repo.name%'
+        number: '%actions.metaPR.data.number%'
+        commit_id: '%actions.metaPR.data.head.sha%'
+        path: src/App.jsx
+        body: |
+            ### Add some code
+
+            Navigate to `List.jsx`. You'll see that we made our own component, `List`. 
+
+            Let's go ahead and import that component.
+
+            At the top of `App.jsx`, replace the line with
+
+            ```js
+            import List from "./List";
+            ```
+        position: 3
     description: Learn how to pass data to child components
     event: push
   - title: State
