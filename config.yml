@@ -34,10 +34,8 @@ steps:
         commit_id: '%actions.metaPR.data.head.sha%'
         path: src/App.jsx
         body: |
-            ```
             ## hello
             HELLO
-            ```
         position: 3
   - title: Props
     actions:
