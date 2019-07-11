@@ -33,7 +33,11 @@ steps:
         number: '%actions.metaPR.data.number%'
         commit_id: '%actions.metaPR.data.head.sha%'
         path: src/App.jsx
-        body: add-component.md
+        body: |
+            ```
+            ## hello
+            HELLO
+            ```
         position: 3
   - title: Props
     actions:
