@@ -70,13 +70,13 @@ steps:
         right: refs/heads/changes
       - type: getPullRequest
         pullRequest: Title
-        action_id: metaPR1
+        action_id: metaPR2
       - type: octokit
         method: pullRequests.createComment
-        owner: '%actions.metaPR1.data.head.repo.owner.login%'
-        repo: '%actions.metaPR1.data.head.repo.name%'
-        number: '%actions.metaPR1.data.number%'
-        in_reply_to: '%actions.metaPR1.data.head.sha%'
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        in_reply_to: '%actions.metaPR2.data.head.sha%'
         path: src/App.jsx
         body: |
             ### Add some code
