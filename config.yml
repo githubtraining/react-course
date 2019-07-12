@@ -75,7 +75,7 @@ steps:
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
         repo: '%actions.metaPR2.data.head.repo.name%'
         number: '%actions.metaPR2.data.number%'
-        in_reply_to: '%actions.metaPR2.data.head.sha%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
         path: src/App.jsx
         body: |
             ### Add some code
