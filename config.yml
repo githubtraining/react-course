@@ -60,7 +60,7 @@ steps:
             git commit -m "added a header and footer"
             git push origin changes
             ```
-          position: 6
+        position: 6
   - title: Props
     actions:
       - type: gate
