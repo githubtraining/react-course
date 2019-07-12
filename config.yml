@@ -60,7 +60,7 @@ steps:
             git commit -m "added a header and footer"
             git push origin changes
             ```
-        position: 6
+        position: 81
   - title: Props
     actions:
       - type: gate
@@ -70,6 +70,9 @@ steps:
       - type: getPullRequest
         pullRequest: Title
         action_id: metaPR2
+      - type: respond
+        with: 02-props.md
+        issue: Title
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -89,7 +92,42 @@ steps:
             ```js
             import List from "./List";
             ```
+
+            Scroll down for the next step.
         position: 3
+        - type: octokit
+          method: pullRequests.createComment
+          owner: '%actions.metaPR2.data.head.repo.owner.login%'
+          repo: '%actions.metaPR2.data.head.repo.name%'
+          number: '%actions.metaPR2.data.number%'
+          commit_id: '%actions.metaPR2.data.head.sha%'
+          path: src/App.jsx
+          body: |
+              ## Add some more code 
+
+              Go ahead and uncomment the conditional statement underneath where it says to
+              
+              `Uncomment below for step 2`
+
+
+              ### Run your code
+
+              To run your code, move inside your repo folder in your terminal and run `npm start`
+
+              ### What your code should look like
+
+              `[ADD SCREEN VID]`
+
+              ### Code Explanation
+
+              Let's take a look at what this code means. Basically, what it is saying is that when we click the `Assignments` button, the list for assignments will be assigned to the variable `tabChoice`. In our `render` method, we see that `tabChoice` is rendered.
+
+              But how do we specialize the `List` for our assignments? This where our props come into play. We create properties such as `placeholder`, and `currList`. We then assign values to them.
+
+              [IMAGES]
+
+              Scroll below for more code to add!
+          position: 60
     description: Learn how to pass data to child components
     event: push
   - title: State
