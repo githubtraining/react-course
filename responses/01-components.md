@@ -11,39 +11,3 @@ class App extends React.Component
 ```
 
 This line is saying that we are taking all the properties a component has and creating our own component named "App". If you take a look inside the `render` method of `App`, you can see that there are a lot of other components like `<button/>`. These components are called **child components** because they are all a part of its parent, `App`. 
-
-
-### Add some code
-Let's add a couple of child components and give our app a header.
-
-
-Where it says:
-
-```
-{/* Replace this line with the proper header code for Step 1 */}
-```
-
-Replace that with this header component:
-
-```jsx
-<h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
-```
-
-
-### Run your code
-To run your code, inside your repo folder in your termainal run `npm start`.
-
-### What your code should look like
-
-`[ADD SCREEN VID]`
-
-### Push your code
-Let's push your code to GitHub
-
-Run the following lines inside your repo folder in your terminal.
-
-```
-git add src/App.jsx
-git commit -m "added a header and footer"
-git push origin changes
-```
