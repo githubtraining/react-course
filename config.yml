@@ -32,7 +32,6 @@ steps:
         repo: '%actions.metaPR.data.head.repo.name%'
         number: '%actions.metaPR.data.number%'
         commit_id: '%actions.metaPR.data.head.sha%'
-        action_id: metaPR1
         path: src/App.jsx
         body: |
             ### Add some code
@@ -73,7 +72,7 @@ steps:
         owner: '%actions.metaPR.data.head.repo.owner.login%'
         repo: '%actions.metaPR.data.head.repo.name%'
         number: '%actions.metaPR.data.number%'
-        commit_id: '%actions.metaPR1.data.head.sha%'
+        in_reply_to: '%actions.metaPR.data.head.sha%'
         path: src/App.jsx
         body: |
             ### Add some code
