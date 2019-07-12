@@ -95,14 +95,14 @@ steps:
 
             Scroll down for the next step.
         position: 3
-        - type: octokit
-          method: pullRequests.createComment
-          owner: '%actions.metaPR2.data.head.repo.owner.login%'
-          repo: '%actions.metaPR2.data.head.repo.name%'
-          number: '%actions.metaPR2.data.number%'
-          commit_id: '%actions.metaPR2.data.head.sha%'
-          path: src/App.jsx
-          body: |
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/App.jsx
+        body: |
               ## Add some more code 
 
               Go ahead and uncomment the conditional statement underneath where it says to
@@ -127,7 +127,7 @@ steps:
               [IMAGES]
 
               Scroll below for more code to add!
-          position: 60
+        position: 60
     description: Learn how to pass data to child components
     event: push
   - title: State
