@@ -62,7 +62,6 @@ steps:
             ```
         position: 6
   - title: Props
-    event: push
     actions:
       - type: gate
         left: '%payload.ref%'
