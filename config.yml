@@ -127,7 +127,7 @@ steps:
               [IMAGES]
 
               Scroll below for more code to add!
-        position: 35
+        position: 40
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -158,7 +158,7 @@ steps:
               git commit -m "using props for List component"
               git push origin changes
               ```
-        position: 35
+        position: 5
     description: Learn how to pass data to child components
     event: push
   - title: State
