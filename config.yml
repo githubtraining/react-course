@@ -167,9 +167,67 @@ steps:
         left: '%payload.ref%'
         operator: ===
         right: refs/heads/changes
+      - type: getPullRequest
+        pullRequest: Title
+        action_id: metaPR2
       - type: respond
         with: 03-state.md
-        issue: Welcome to React
+        issue: Title
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/App.jsx
+        body: |
+            ### Add some code
+
+            In React, we store dynamic data in **state variables**. Let's take a look at how we store state variables. In `App.jsx`, take a look at the constructor. You'll see that we declare our state variables using `this.state = {.....}`.
+
+
+            Currently, in `App`, we have three state variables:
+            - `buttonClicked` - This stores which button was clicked. It is a state variable because the button that is clicked has the ability to change.
+            - `assignmentsList` - This stores the list of assignments. It is a state variable because the list changes every time a new assignment is added.
+            - `grades` - This should store the grade for each student. However, we have no way to store students, so let's fix that!
+
+            Add a state variable to `App` and name it `studentsList`. Set it equal to an empty list. Make sure to add the comma! 
+        position: 4
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/App.jsx
+        body: |
+
+            ### Explaining `this.setState`
+
+            Ok, so now we added a state variable, how do we actually change the data?
+
+            Unfortunatley, we can't just do `this.state.studentsList = .....` to change data. I wish it was that simple!
+
+            To set the state of a state variable we have to use the method, `this.setState`.
+
+            Take a look at the above code in `App.jsx`
+
+            When this method is called, it setting the state variable `buttonClicked` to the argument, `buttonName` using `this.setState`.
+
+            In our `render` method we see that `handleButtonClicked` is called when each button is clicked with it's respective arguments. For instance, when the `Assignments` button is clicked, we call `handleButtonClicked("assignments")`.
+
+            We are going to set some state in next steps.
+
+            ### Push your code
+            
+            To push your code to Github, run the following lines inside the repo folder in your terminal.
+
+            ```
+            git add -u
+            git commit -m "using props for List component"
+            git push origin changes
+            ```
+        position: 10
     description: Learn how to deal with dynamic data
     event: push
   - title: Callback Functions
