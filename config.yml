@@ -60,7 +60,7 @@ steps:
             git commit -m "added a header and footer"
             git push origin changes
             ```
-        position: 83
+        position: 85
   - title: Props
     actions:
       - type: gate
@@ -217,7 +217,7 @@ steps:
             In our `render` method we see that `handleButtonClicked` is called when each button is clicked with it's respective arguments. For instance, when the `Assignments` button is clicked, we call `handleButtonClicked("assignments")`.
 
             We are going to set some state in next steps.
-        position: 25
+        position: 32
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -234,7 +234,7 @@ steps:
             create a method called `addStudent` below the comment
 
             `addStudent` should take `studentName` as a parameter and then concat that `studentName` to the end of `students` list that we created earlier. 
-        position: 32
+        position: 38
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -259,7 +259,7 @@ steps:
             git push origin changes
 
             ```
-        position: 18
+        position: 20
     description: Learn how to deal with dynamic data
     event: push
   - title: Callback Functions
@@ -280,46 +280,70 @@ steps:
         repo: '%actions.metaPR2.data.head.repo.name%'
         number: '%actions.metaPR2.data.number%'
         commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/List.jsx
+        path: src/App.jsx
         body: |
               
-              ### Add some code
-              Now that we see how it works with assignments, let's try it with students! 
+              ### Code Explanation 
 
-              Below this line of code in `App.jsx`
-              ```
-              /*Write an addStudent function here for step 4*/
-              ```
+              So where exactly are those functions we created to set state getting called?
 
-              create a method called `addStudent`
-
-              `addStudent` should take `studentName` as a parameter and then concat that `studentName` to the end of `students` list that we created earlier. 
-
-              Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.
-
-              Go ahead and uncomment the following line.
-
-              ```
-              /*this.addStudent = this.addStudent.bind(this);*/
-              ```
-
-              Awesome, now let's actually add some functionality to our students button.
-
-              Go ahead and uncomment this code.
-
-              ### Run your code
-              Add line here
-        position: 5
+              So it looks like we pass the `addAssignment` function as a prop in this chunk of code.
+        position: 52
+      - type: respond
+        with: callback-example.md
+        issue: Title
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
         repo: '%actions.metaPR2.data.head.repo.name%'
         number: '%actions.metaPR2.data.number%'
         commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/List.jsx
+        path: src/App.jsx
         body: |
-              push origin changes
-        position: 5
+            ### Change some code
+
+            Take a look at this conditional in `App.jsx`. 
+
+            We are trying to render the correct component when we click `Students`. Go ahead and uncomment the entire conditional statement.
+
+            Hmmm, there's some stuff wrong about this code. We want to be modifying the `students` list, not the `assignments` list. 
+
+            Let's go ahead and change some props!
+
+            - Change the `placeholder` prop to `"Add Student..."`
+            - Change the `currList` prop to `{this.state.students}`
+            - Change the `addFunction` prop to `{this.addStudent}`
+        position: 60
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/App.jsx
+        body: |
+            ### Uncomment that last bit of code 
+
+            LAST THING! Let's get our grades working!
+
+            Uncomment this last conditional statement for the grades tab!
+            
+            ### Run your code
+            To run your code, move inside your repo folder in your terminal and run `npm start`
+
+            ### What your code should look like
+
+            Your code should now be able to add assignments, students, and grades!
+
+            ### Push your code
+            To push your code to Github, run the following lines inside the repo folder in your terminal.
+
+            ```
+            git add -u
+            git commit -m "used callback functions to complete project"
+            git push origin changes
+            ```
+        position: 70
 
 
     description: Learn how to pass data back to parent components
