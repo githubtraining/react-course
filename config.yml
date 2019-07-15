@@ -236,7 +236,7 @@ steps:
         left: '%payload.ref%'
         operator: ===
         right: refs/heads/changes
-     -  type: getPullRequest
+      - type: getPullRequest
         pullRequest: Title
         action_id: metaPR2
       - type: respond
@@ -275,22 +275,8 @@ steps:
 
               Go ahead and uncomment this code.
 
-              ```
-              /*if (this.state.buttonClicked === "students") {
-                tabChoice = (
-                  <List
-                    placeholder="Add Assignment..." 
-                    currList={this.state.assignments}
-                    addFunction={this.addAssignment}
-                    title="Student Roster"
-                  />
-                );
-              }*/
-              ```
-
-            ### Run your code
-            To run your code, move inside your repo folder in your terminal and run `npm start`
-              ```
+              ### Run your code
+              Add line here
         position: 5
       - type: octokit
         method: pullRequests.createComment
@@ -301,7 +287,6 @@ steps:
         path: src/List.jsx
         body: |
               push origin changes
-```
         position: 5
 
 
