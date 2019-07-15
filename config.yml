@@ -60,7 +60,7 @@ steps:
             git commit -m "added a header and footer"
             git push origin changes
             ```
-        position: 80
+        position: 88
   - title: Props
     actions:
       - type: gate
@@ -127,7 +127,7 @@ steps:
               [IMAGES]
 
               Scroll below for more code to add!
-        position: 37
+        position: 46
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -217,17 +217,49 @@ steps:
             In our `render` method we see that `handleButtonClicked` is called when each button is clicked with it's respective arguments. For instance, when the `Assignments` button is clicked, we call `handleButtonClicked("assignments")`.
 
             We are going to set some state in next steps.
+        position: 25
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/App.jsx
+        body: |
+
+            ### Create your own function
+
+            Now that we see how it works with assignments, let's try it with students! 
+
+            create a method called `addStudent` below the comment
+
+            `addStudent` should take `studentName` as a parameter and then concat that `studentName` to the end of `students` list that we created earlier. 
+        position: 32
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/App.jsx
+        body: |
+
+            ### Bind the function
+
+            Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.
+
+            Go ahead and uncomment this line.
+
 
             ### Push your code
-            
-            To push your code to Github, run the following lines inside the repo folder in your terminal.
 
             ```
             git add -u
-            git commit -m "using props for List component"
+            git commit -m "using students state variable and setting state"
             git push origin changes
+
             ```
-        position: 10
+        position: 18
     description: Learn how to deal with dynamic data
     event: push
   - title: Callback Functions
