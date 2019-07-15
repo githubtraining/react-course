@@ -51,45 +51,6 @@ handleSubmit(event) {
 It looks like when the submit button is clicked, we call the `addFunction` with the value of our input box. For assignments, this `addFunction` references the `this.addAssignment` in `App`. So when we call `this.props.addFunction`, we are calling back to the parent component and using the parent's function. 
 
 
-### Add some code
-Now that we see how it works with assignments, let's try it with students! 
-
-Below this line of code in `App.jsx`
-```
-  /*Write an addStudent function here for step 4*/
-```
-
-create a method called `addStudent`
-
-`addStudent` should take `studentName` as a parameter and then concat that `studentName` to the end of `students` list that we created earlier. 
-
-Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.
-
-Go ahead and uncomment the following line.
-
-```
-    /*this.addStudent = this.addStudent.bind(this);*/
-```
-
-Awesome, now let's actually add some functionality to our students button.
-
-Go ahead and uncomment this code.
-
-```
-/*if (this.state.buttonClicked === "students") {
-      tabChoice = (
-        <List
-          placeholder="Add Assignment..." 
-          currList={this.state.assignments}
-          addFunction={this.addAssignment}
-          title="Student Roster"
-        />
-      );
-    }*/
-```
-
-### Run your code
-To run your code, move inside your repo folder in your terminal and run `npm start`
 
 ### Add some more code
 

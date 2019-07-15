@@ -60,7 +60,7 @@ steps:
             git commit -m "added a header and footer"
             git push origin changes
             ```
-        position: 6
+        position: 80
   - title: Props
     actions:
       - type: gate
@@ -127,7 +127,7 @@ steps:
               [IMAGES]
 
               Scroll below for more code to add!
-        position: 40
+        position: 37
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -192,7 +192,7 @@ steps:
             - `grades` - This should store the grade for each student. However, we have no way to store students, so let's fix that!
 
             Add a state variable to `App` and name it `studentsList`. Set it equal to an empty list. Make sure to add the comma! 
-        position: 4
+        position: 12
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -236,8 +236,74 @@ steps:
         left: '%payload.ref%'
         operator: ===
         right: refs/heads/changes
+     -  type: getPullRequest
+        pullRequest: Title
+        action_id: metaPR2
       - type: respond
         with: 04-callbackfunctions.md
-        issue: Welcome to React
+        issue: Title
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/List.jsx
+        body: |
+              
+              ### Add some code
+              Now that we see how it works with assignments, let's try it with students! 
+
+              Below this line of code in `App.jsx`
+              ```
+              /*Write an addStudent function here for step 4*/
+              ```
+
+              create a method called `addStudent`
+
+              `addStudent` should take `studentName` as a parameter and then concat that `studentName` to the end of `students` list that we created earlier. 
+
+              Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.
+
+              Go ahead and uncomment the following line.
+
+              ```
+              /*this.addStudent = this.addStudent.bind(this);*/
+              ```
+
+              Awesome, now let's actually add some functionality to our students button.
+
+              Go ahead and uncomment this code.
+
+              ```
+              /*if (this.state.buttonClicked === "students") {
+                tabChoice = (
+                  <List
+                    placeholder="Add Assignment..." 
+                    currList={this.state.assignments}
+                    addFunction={this.addAssignment}
+                    title="Student Roster"
+                  />
+                );
+              }*/
+              ```
+
+            ### Run your code
+            To run your code, move inside your repo folder in your terminal and run `npm start`
+              ```
+        position: 5
+      - type: octokit
+        method: pullRequests.createComment
+        owner: '%actions.metaPR2.data.head.repo.owner.login%'
+        repo: '%actions.metaPR2.data.head.repo.name%'
+        number: '%actions.metaPR2.data.number%'
+        commit_id: '%actions.metaPR2.data.head.sha%'
+        path: src/List.jsx
+        body: |
+              push origin changes
+```
+        position: 5
+
+
     description: Learn how to pass data back to parent components
     event: push
