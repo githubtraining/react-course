@@ -345,6 +345,13 @@ steps:
             git push origin changes
             ```
 
+            ### Fix merge conficts
+            Go ahead and click on `Resolve conflicts` below.
+
+            Keep everything between lines 2 and 11 and delete everything else!
+
+            Then click `Mark as resolved`
+
             ### Merge your code
             After you push, merge this PR and delete the branch! Congratulations! 
         position: 78
