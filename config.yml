@@ -9,8 +9,6 @@ before:
   - type: createIssue
     title: Welcome to React
     body: 00-setup.md
-    comments:
-      - test.md
 
 steps:
   - title: Setup and Components
@@ -22,7 +20,7 @@ steps:
         right: refs/heads/changes
         operator: ===
       - type: createPullRequest
-        title: Title
+        title: Changes to App
         body: 01-components.md
         head: changes
         action_id: metaPR
@@ -48,7 +46,8 @@ steps:
 
             ### What your code should look like
 
-            `[ADD SCREEN VID]`
+            Your app should look like this!
+            ![App with header](https://user-images.githubusercontent.com/25253905/61294086-eb352e80-a789-11e9-96ab-8b6cb09b3791.png)
 
             ### Push your code
             Let's push your code to GitHub
@@ -57,7 +56,7 @@ steps:
 
             ```
             git add src/App.jsx
-            git commit -m "added a header and footer"
+            git commit -m "added a header"
             git push origin changes
             ```
         position: 85
@@ -68,11 +67,11 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Title
+        pullRequest: Changes to App
         action_id: metaPR2
       - type: respond
         with: 02-props.md
-        issue: Title
+        issue: Changes to App
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -116,15 +115,13 @@ steps:
 
               ### What your code should look like
 
-              `[ADD SCREEN VID]`
+              ![No Title Assignments](https://user-images.githubusercontent.com/25253905/61294177-1ddf2700-a78a-11e9-963d-8b6d2a4f7b82.png)
 
               ### Code Explanation
 
               Let's take a look at what this code means. Basically, what it is saying is that when we click the `Assignments` button, the list for assignments will be assigned to the variable `tabChoice`. In our `render` method, we see that `tabChoice` is rendered.
 
               But how do we specialize the `List` for our assignments? This where our props come into play. We create properties such as `placeholder`, and `currList`. We then assign values to them.
-
-              [IMAGES]
 
               Scroll below for more code to add!
         position: 46
@@ -154,7 +151,8 @@ steps:
               To push your code to Github, run the following lines inside the repo folder in your terminal.
 
               ```
-              git add -u
+              git add src/App.jsx
+              git add src/List.jsx
               git commit -m "using props for List component"
               git push origin changes
               ```
@@ -168,11 +166,11 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Title
+        pullRequest: Changes to App
         action_id: metaPR2
       - type: respond
         with: 03-state.md
-        issue: Title
+        issue: Changes to App
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -250,11 +248,14 @@ steps:
 
             Go ahead and uncomment this line.
 
+            ### Run your code
+            Run your code with `npm start` to make sure there are no errors.
+
 
             ### Push your code
 
             ```
-            git add -u
+            git add src/App.jsx
             git commit -m "using students state variable and setting state"
             git push origin changes
 
@@ -269,11 +270,11 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Title
+        pullRequest: Changes to App
         action_id: metaPR2
       - type: respond
         with: 04-callbackfunctions.md
-        issue: Title
+        issue: Changes to App
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -291,7 +292,7 @@ steps:
         position: 52
       - type: respond
         with: callback-example.md
-        issue: Title
+        issue: Changes to App
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -333,16 +334,19 @@ steps:
 
             ### What your code should look like
 
-            Your code should now be able to add assignments, students, and grades!
+            Your code should now be able to add assignments, students, and grades! You are done!
 
             ### Push your code
             To push your code to Github, run the following lines inside the repo folder in your terminal.
 
             ```
-            git add -u
+            git add src/App.jsx
             git commit -m "used callback functions to complete project"
             git push origin changes
             ```
+
+            ### Merge your code
+            After you push, merge this PR and delete the branch! Congratulations! 
         position: 78
 
 
