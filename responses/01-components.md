@@ -4,7 +4,7 @@ React apps are made up of components. Think of components as different parts of 
 
 ![Assignments Solution](https://user-images.githubusercontent.com/25253905/61293228-11f26580-a788-11e9-90ac-9612c2bddf6b.png)
 
-In our solution, our assignments pages looks like the above. The overall webpage is a component that we call `App` and inside `App` there's a bunch of other components like buttons, titles, and even other custom components that we can create (like the Assginments List).
+In our [solution](https://githubtraining.github.io/react-solution/), our assignments pages looks like the above. The overall webpage is a component that we call `App` and inside `App` there's a bunch of other components like buttons, titles, and even other custom components that we can create (like the Assginments List).
 
 Take a look at the following line in `App.jsx`. 
 
