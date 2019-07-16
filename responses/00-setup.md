@@ -1,37 +1,15 @@
-## Welcome to React!
-
-Congratulations on taking some of your first steps into full stack development! 
-
-So why did you decide to click and join this course? Ideally, you are a learner who:
-
-- Understands HTML tags
-- Understands classes and methods in Javascript
-- Understands git and GitHub
-
-If you understand the topics above, you can start learning modern frontend development with React!
-
-So why do we learn React?
-
-React has growing popularity in the tech industry because of its simplicity. With a simple knowledge of HTML and Javascript, picking up React shouldn't be too bad.
-
-### What we will be building
-
-So what are we going to be building today? We are going to build a gradebook for teachers! Take a look at `deployed link here`. Here's a recording of the finished app.
-
-`[SCREEN RECODING HERE]`
-
 ### Clone the Repo and Install Node
 
 Let's go ahead and get started.
 
 First, clone this repo.
 
-In your terminal, in a folder where you would like to keep this project, run the following:
+In your terminal, in a folder where you would like to keep this project, do the following:
 
-```
-git clone repo_name
-cd repo_name
-```
+- Clone the Repo
+- Move into that repo folder
+
+Next, open the folder in your favorite text editor. I reccommend VSCode.
 
 Great, now if you don't have Node installed on your computer, go ahead and [install it](https://nodejs.org/en/download/)!
 
@@ -54,12 +32,12 @@ You'll see that our app can't really do anything! All we have is three buttons! 
 ### So what's in our React App
 Let's take a look of what our React App looks like right now.
 
-`[SCREENSHOT OF FILE STRUCTURE]`
+![File Structure](https://user-images.githubusercontent.com/25253905/61294641-28e68700-a78b-11e9-9bc1-ff468312ca8b.png)
 
 
 ##### package.json
 
-`[SCREENSHOT OF PACKAGE.JSON]`
+![package](https://user-images.githubusercontent.com/25253905/61294748-5e8b7000-a78b-11e9-9475-163d8c7bc6b3.png)
 
 This file is our roadmap of the app. It tells us the name of the app, the version, the different dependencies we need to run our app, and more.
 
@@ -78,7 +56,7 @@ To get started, first checkout to a new branch called `changes`
 Inside your repo folder, run the following in your terminal:
 
 ```
-git checkout -b changes
+git checkout changes
 ```
 
 Next, navigate to `README.md`, and change the author name to your name.
@@ -89,9 +67,9 @@ Let's push your code to GitHub
 Run the following lines inside your repo folder in your terminal.
 
 ```
-git add .
+git add README.md
 git commit -m "added my name"
 git push origin changes
 ```
 
-After you push, this issue will respond with next steps.
+After you push, this open the `Pull Requests` tab and click on the PR that shows!
