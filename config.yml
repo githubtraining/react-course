@@ -313,7 +313,7 @@ steps:
             - Change the `placeholder` prop to `"Add Student..."`
             - Change the `currList` prop to `{this.state.students}`
             - Change the `addFunction` prop to `{this.addStudent}`
-        position: 60
+        position: 68
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -343,7 +343,7 @@ steps:
             git commit -m "used callback functions to complete project"
             git push origin changes
             ```
-        position: 70
+        position: 78
 
 
     description: Learn how to pass data back to parent components
