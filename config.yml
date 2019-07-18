@@ -13,17 +13,22 @@ before:
 steps:
   - title: Setup and Components
     description: Welcome to React! Let's get started with our project.
-    event: push
+    event: pull_request
     actions:
       - type: gate
-        left: '%payload.ref%'
-        right: refs/heads/changes
+        left: '%payload.pull_request.title%'
+        right: Changes to App
         operator: ===
-      - type: createPullRequest
+        else:
+          - type: respond
+            with: Make sure the title of your PR is "Changes to App"
+            issue: Welcome to React
+      - type: getPullRequest
         title: Changes to App
-        body: 01-components.md
-        head: changes
         action_id: metaPR
+      - type: respond
+        with: 01-components.md
+        issue: Changes to App
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR.data.head.repo.owner.login%'
