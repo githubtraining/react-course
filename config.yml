@@ -24,7 +24,7 @@ steps:
             with: Make sure the title of your PR is "Changes to App"
             issue: Welcome to React
       - type: getPullRequest
-        title: Changes to App
+        pullRequest: Changes to App
         action_id: metaPR
       - type: respond
         with: 01-components.md
