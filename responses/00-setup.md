@@ -50,26 +50,7 @@ This directory contains our `index.html` which directs us to the rest of the web
 This is where pretty much ALL of your code will go. You'll notice we have `App.jsx` along with other `jsx` files, but what is `jsx`. Think of `jsx` as a mix between `html` and `javascript`. We can write tags as well as functions and classes. Take a look at `App.jsx`. Some of that stuff might look familiar from `html`, like thos `<div/>` tags. Don't worry, we will get to that stuff in a bit.
 
 
-### Add some code
-To get started, first checkout to a new branch called `changes`
+### Open a Pull Request
+To get started, navigate to the `Pull Requests` tab and open a PR for the `changes` branch. Make sure to title your PR `Changes`. 
 
-Inside your repo folder, run the following in your terminal:
-
-```
-git checkout changes
-```
-
-Next, navigate to `README.md`, and change the author name to your name.
-
-### Push your code
-Let's push your code to GitHub
-
-Run the following lines inside your repo folder in your terminal.
-
-```
-git add README.md
-git commit -m "added my name"
-git push origin changes
-```
-
-After you push, this open the `Pull Requests` tab and click on the PR that shows!
+Once you open the Pull Request, steps will appear inside the Pull Request itself.
