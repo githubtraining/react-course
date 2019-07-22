@@ -17,18 +17,18 @@ steps:
     actions:
       - type: gate
         left: '%payload.pull_request.title%'
-        right: Changes to App
+        right: Changes
         operator: ===
         else:
           - type: respond
-            with: Make sure the title of your PR is "Changes to App"
+            with: Make sure the title of your PR is "Changes"
             issue: Welcome to React
       - type: getPullRequest
-        pullRequest: Changes to App
+        pullRequest: Changes
         action_id: metaPR
       - type: respond
         with: 01-components.md
-        issue: Changes to App
+        issue: Changes
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR.data.head.repo.owner.login%'
@@ -72,11 +72,11 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes to App
+        pullRequest: Changes
         action_id: metaPR2
       - type: respond
         with: 02-props.md
-        issue: Changes to App
+        issue: Changes
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -171,11 +171,11 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes to App
+        pullRequest: Changes
         action_id: metaPR2
       - type: respond
         with: 03-state.md
-        issue: Changes to App
+        issue: Changes
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -275,11 +275,11 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes to App
+        pullRequest: Changes
         action_id: metaPR2
       - type: respond
         with: 04-callbackfunctions.md
-        issue: Changes to App
+        issue: Changes
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
@@ -297,7 +297,7 @@ steps:
         position: 52
       - type: respond
         with: callback-example.md
-        issue: Changes to App
+        issue: Changes
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
