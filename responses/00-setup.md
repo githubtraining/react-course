@@ -6,8 +6,11 @@ First, clone this repo.
 
 In your terminal, in a folder where you would like to keep this project, do the following:
 
-- Clone the Repo
-- Move into that repo folder
+```
+git clone `{{ repoURL }}`
+cd intro-react
+git checkout changes
+```
 
 Next, open the folder in your favorite text editor. I reccommend VSCode.
 
