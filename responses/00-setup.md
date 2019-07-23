@@ -7,7 +7,7 @@ First, clone this repo.
 In your terminal, in a folder where you would like to keep this project, do the following:
 
 ```
-git clone `{{ repoURL }}`
+git clone {{ repoURL }}
 cd intro-react
 git checkout changes
 ```
