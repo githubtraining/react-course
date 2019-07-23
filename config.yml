@@ -37,7 +37,7 @@ steps:
         commit_id: '%actions.metaPR.data.head.sha%'
         path: src/App.jsx
         body: |
-            ### Add some code
+            ### Add a header component
             Let's add a couple of child components and give our app a header.
 
             Replace the line where it says to replace with this header component:
@@ -85,7 +85,7 @@ steps:
         commit_id: '%actions.metaPR2.data.head.sha%'
         path: src/App.jsx
         body: |
-            ### Add some code
+            ### Import a Child Component
 
             Navigate to `List.jsx`. You'll see that we made our own component, `List`. 
 
@@ -107,7 +107,7 @@ steps:
         commit_id: '%actions.metaPR2.data.head.sha%'
         path: src/App.jsx
         body: |
-              ## Add some more code 
+              ## Uncomment Assignments Section 
 
               Go ahead and uncomment the conditional statement underneath where it says to
               
@@ -138,7 +138,7 @@ steps:
         commit_id: '%actions.metaPR2.data.head.sha%'
         path: src/List.jsx
         body: |
-              ### Add some more code
+              ### Replace the title
 
               But what does the `List` component do with this information? Let's take a look. 
 
@@ -184,7 +184,7 @@ steps:
         commit_id: '%actions.metaPR2.data.head.sha%'
         path: src/App.jsx
         body: |
-            ### Add some code
+            ### Add a state variable
 
             In React, we store dynamic data in **state variables**. Let's take a look at how we store state variables. In `App.jsx`, take a look at the constructor. You'll see that we declare our state variables using `this.state = {.....}`.
 
@@ -230,7 +230,7 @@ steps:
         path: src/App.jsx
         body: |
 
-            ### Create your own function
+            ### Create `addStudent` Function
 
             Now that we see how it works with assignments, let's try it with students! 
 
@@ -289,7 +289,7 @@ steps:
         path: src/App.jsx
         body: |
               
-              ### Code Explanation 
+              ### Passing Functions as Props
 
               So where exactly are those functions we created to set state getting called?
 
@@ -306,7 +306,7 @@ steps:
         commit_id: '%actions.metaPR2.data.head.sha%'
         path: src/App.jsx
         body: |
-            ### Change some code
+            ### Change the props for Students
 
             Take a look at this conditional in `App.jsx`. 
 
@@ -328,7 +328,7 @@ steps:
         commit_id: '%actions.metaPR2.data.head.sha%'
         path: src/App.jsx
         body: |
-            ### Uncomment that last bit of code 
+            ### Uncomment the Grades Section 
 
             LAST THING! Let's get our grades working!
 
@@ -349,13 +349,6 @@ steps:
             git commit -m "used callback functions to complete project"
             git push origin changes
             ```
-
-            ### Fix merge conficts
-            Go ahead and click on `Resolve conflicts` below.
-
-            Keep everything between lines 2 and 11 and delete everything else!
-
-            Then click `Mark as resolved`
 
             ### Merge your code
             After you push, merge this PR and delete the branch! Congratulations! 
