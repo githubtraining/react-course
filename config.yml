@@ -178,6 +178,17 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/^\s*if\s*\(this\.state\.buttonClicked\s*===\s*"assignments"\)[^*/]$/gm'
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-uncomment.md
+            issue: Changes
       - type: respond
         with: 03-state.md
         issue: Changes
