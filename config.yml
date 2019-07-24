@@ -364,3 +364,11 @@ steps:
     description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
+  - title: Congratulations and Closing Thoughts
+    event: pull_request
+    description: Congrats on finishing the course!
+    actions:
+      - type: respond
+        with: 05-congrats.md
+        issue: Changes
+    
