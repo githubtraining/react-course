@@ -28,6 +28,9 @@ steps:
         pullRequest: Changes
         action_id: metaPR
       - type: respond
+        with: 01-congrats.md
+        issue: Changes
+      - type: respond
         with: 01-components.md
         issue: Changes
       - type: octokit

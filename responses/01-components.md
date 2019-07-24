@@ -13,3 +13,5 @@ class App extends React.Component
 ```
 
 This line is saying that we are taking all the properties a component has and creating our own component named "App". If you take a look inside the `render` method of `App`, you can see that there are a lot of other components like `<button/>`. These components are called **child components** because they are all a part of its parent, `App`. 
+
+Scroll down to add a header component!
