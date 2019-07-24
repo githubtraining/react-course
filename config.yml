@@ -13,7 +13,7 @@ before:
 steps:
   - title: Setup and Components
     description: Welcome to React! Let's get started with our project.
-    event: pull_request
+    event: pull_request.opened
     link: '{{ repoUrl }}/issues/1'
     actions:
       - type: gate
@@ -365,7 +365,7 @@ steps:
     event: push
     link: '{{ repoUrl }}/issues/2'
   - title: Congratulations and Closing Thoughts
-    event: pull_request
+    event: pull_request.closed
     description: Congrats on finishing the course!
     actions:
       - type: respond
