@@ -196,10 +196,10 @@ steps:
 
             Currently, in `App`, we have three state variables:
             - `buttonClicked` - This stores which button was clicked. It is a state variable because the button that is clicked has the ability to change.
-            - `assignmentsList` - This stores the list of assignments. It is a state variable because the list changes every time a new assignment is added.
+            - `assignments` - This stores the list of assignments. It is a state variable because the list changes every time a new assignment is added.
             - `grades` - This should store the grade for each student. However, we have no way to store students, so let's fix that!
 
-            Add a state variable to `App` and name it `studentsList`. Set it equal to an empty list. Make sure to add the comma! 
+            Add a state variable to `App` and name it `students`. Set it equal to an empty list. Make sure to add the comma! 
         position: 12
       - type: octokit
         method: pullRequests.createComment
