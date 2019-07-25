@@ -1,6 +1,6 @@
 title: Introduction to React
 tagline: Take your first steps in modern frontend development
-description: Learn React
+description: In this course, you will learn the basics of React.js through building a gradebook web application to manage assignments, students, and grades.
 template:
   name: intro-react
   repo: react-template
@@ -304,6 +304,17 @@ steps:
         else:
           - type: respond
             with: bad-uncomment.md
+            issue: Changes
+      - type: getPullRequest
+        pullRequest: Changes
+        action_id: metaPR2
+      - type: gate
+        left: '/^\s*addStudent\s*\(\s*studentName\s*\)\s*/g'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-function.md
             issue: Changes
       - type: respond
         with: 04-callbackfunctions.md
