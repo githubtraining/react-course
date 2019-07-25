@@ -309,7 +309,7 @@ steps:
         pullRequest: Changes
         action_id: metaPR2
       - type: gate
-        left: '/^\s*addStudent\s*\(\s*studentName\s*\)\s*/g'     
+        left: '/^\s*addStudent\s*\(\s*studentName\s*\)\s*/gm'     
         operator: test
         right: '%actions.fileContents%'
         else:
