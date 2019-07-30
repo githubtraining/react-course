@@ -394,7 +394,7 @@ steps:
     link: '{{ repoUrl }}/issues/2'
   - title: Get Your Pull Request Approved
     event: push
-    description: Get your Pull Request Approved
+    description: Let's confirm you made the right changes
     actions:
       - type: gate
         left: '%payload.ref%'
