@@ -399,6 +399,9 @@ steps:
     event: pull_request.closed
     description: Congrats on finishing the course!
     actions:
+      - type: removeBranchProtection
+      - type: mergePullRequest
+        pullRequest: Changes
       - type: respond
         with: 05-congrats.md
         issue: Changes
