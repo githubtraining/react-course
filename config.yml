@@ -401,6 +401,7 @@ steps:
     actions:
       - type: createReview
         event: APPROVE
+        body: approve.md
         pullRequest: Changes
       - type: mergePullRequest
         pullRequest: Changes
