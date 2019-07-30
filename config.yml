@@ -141,81 +141,24 @@ steps:
       - type: respond
         with: 04-callbackfunctions.md
         issue: Changes
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-              
-              ### Passing Functions as Props
-
-              So where exactly are those functions we created to set state getting called?
-
-              So it looks like we pass the `addAssignment` function as a prop in this chunk of code.
+      - type: createPullRequestComment
+        body: passing-functions-activity.md
+        file: src/App.jsx
         position: 52
+        pullRequest: '%actions.metaPR2.data.number%'
       - type: respond
         with: callback-example.md
         issue: Changes
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Change the props for Students
-
-            Take a look at this conditional in `App.jsx`. 
-
-            We are trying to render the correct component when we click `Students`. Go ahead and uncomment the entire conditional statement.
-
-            Hmmm, there's some stuff wrong about this code. We want to be modifying the `students` list, not the `assignments` list. 
-
-            Let's go ahead and change some props!
-
-            - Change the `placeholder` prop to `"Add Student..."`
-            - Change the `currList` prop to `{this.state.students}`
-            - Change the `addFunction` prop to `{this.addStudent}`
+      - type: createPullRequestComment
+        body: change-props-students-activity.md
+        file: src/App.jsx
         position: 68
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Uncomment the Grades Section 
-
-            LAST THING! Let's get our grades working!
-
-            Uncomment this last conditional statement for the grades tab!
-            
-            ### Run your code
-            To run your code, move inside your repo folder in your terminal and run `npm start`
-
-            ### What your code should look like
-
-            Your code should now be able to add assignments, students, and grades! You are done!
-
-            ### Push your code
-            To push your code to Github, run the following lines inside the repo folder in your terminal.
-
-            ```
-            git add src/App.jsx
-            git commit -m "used callback functions to complete project"
-            git push origin changes
-            ```
-
-            ### Merge your code
-            After you push, merge this PR and delete the branch! Congratulations! 
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: uncomment-grades-activity.md
+        file: src/App.jsx
         position: 78
-
-
+        pullRequest: '%actions.metaPR2.data.number%'
     description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
