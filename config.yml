@@ -399,7 +399,9 @@ steps:
     event: pull_request.closed
     description: Congrats on finishing the course!
     actions:
-      - type: removeBranchProtection
+      - type: createReview
+        event: APPROVE
+        pullRequest: Changes
       - type: mergePullRequest
         pullRequest: Changes
       - type: respond
