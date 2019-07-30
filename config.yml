@@ -392,9 +392,9 @@ steps:
     description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
-  - title: Merge the Pull Request
+  - title: Get Your Pull Request Approved
     event: push
-    description: Get your Pull Request Approved and Merge
+    description: Get your Pull Request Approved
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -404,7 +404,7 @@ steps:
         event: APPROVE
         body: approve.md
         pullRequest: Changes
-  - title: Congratulations and Closing Thoughts
+  - title: Merge your Pull Request
     event: pull_request.closed
     description: Congrats on finishing the course!
     actions:
