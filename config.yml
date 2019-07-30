@@ -50,29 +50,7 @@ steps:
         body: import-child-component-activity.md
         file: src/App.jsx
         position: 3
-
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Import a Child Component
-
-            Navigate to `List.jsx`. You'll see that we made our own component, `List`. 
-
-            Let's go ahead and import that component.
-
-            At the top of `App.jsx`, replace the line with
-
-            ```js
-            import List from "./List";
-            ```
-
-            Scroll down for the next step.
-        position: 3
+        
       - type: octokit
         method: pullRequests.createComment
         owner: '%actions.metaPR2.data.head.repo.owner.login%'
