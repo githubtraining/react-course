@@ -16,6 +16,7 @@ steps:
     event: pull_request.opened
     link: '{{ repoUrl }}/issues/1'
     actions:
+      - type: updateBranchProtection
       - type: gate
         left: '%payload.pull_request.title%'
         right: Changes
