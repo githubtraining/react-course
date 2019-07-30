@@ -89,77 +89,21 @@ steps:
         file: src/App.jsx
         position: 12
         pullRequest: '%actions.metaPR2.data.number%'
-
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-
-            ### Explaining `this.setState`
-
-            Ok, so now we added a state variable, how do we actually change the data?
-
-            Unfortunatley, we can't just do `this.state.studentsList = .....` to change data. I wish it was that simple!
-
-            To set the state of a state variable we have to use the method, `this.setState`.
-
-            Take a look at the above code in `App.jsx`
-
-            When this method is called, it setting the state variable `buttonClicked` to the argument, `buttonName` using `this.setState`.
-
-            In our `render` method we see that `handleButtonClicked` is called when each button is clicked with it's respective arguments. For instance, when the `Assignments` button is clicked, we call `handleButtonClicked("assignments")`.
-
-            We are going to set some state in next steps.
+      - type: createPullRequestComment
+        body: explainin-this-state-activity.md
+        file: src/App.jsx
         position: 32
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-
-            ### Create `addStudent` Function
-
-            Now that we see how it works with assignments, let's try it with students! 
-
-            create a method called `addStudent` below the comment
-
-            `addStudent` should take `studentName` as a parameter and then concat that `studentName` to the end of `students` list that we created earlier. 
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: create-addstudent-activity.md
+        file: src/App.jsx
         position: 38
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-
-            ### Bind the function
-
-            Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.
-
-            Go ahead and uncomment this line.
-
-            ### Run your code
-            Run your code with `npm start` to make sure there are no errors.
-
-
-            ### Push your code
-
-            ```
-            git add src/App.jsx
-            git commit -m "using students state variable and setting state"
-            git push origin changes
-
-            ```
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: bind-function-activity.md
+        file: src/App.jsx
         position: 20
+        pullRequest: '%actions.metaPR2.data.number%'
     description: Learn how to deal with dynamic data
     event: push
     link: '{{ repoUrl }}/issues/2'
