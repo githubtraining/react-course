@@ -394,7 +394,7 @@ steps:
     link: '{{ repoUrl }}/issues/2'
   - title: Merge the Pull Request
     event: push
-    description: Merge your approved Pull Request!
+    description: Get your Pull Request Approved and Merge
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -404,11 +404,6 @@ steps:
         event: APPROVE
         body: approve.md
         pullRequest: Changes
-      - type: mergePullRequest
-        pullRequest: Changes
-      - type: respond
-        with: 05-congrats.md
-        issue: Changes
   - title: Congratulations and Closing Thoughts
     event: pull_request.closed
     description: Congrats on finishing the course!
