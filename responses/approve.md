@@ -1,1 +1,3 @@
-Changes are approved! We will merge the branch for you!
+Changes are approved!
+
+Go ahead and merge the Pull Request!

@@ -9,6 +9,7 @@ before:
   - type: createIssue
     title: Welcome to React
     body: 00-setup.md
+  - type: updateBranchProtection
 
 steps:
   - title: Setup and Components
@@ -30,7 +31,6 @@ steps:
       - type: respond
         with: 01-components.md
         issue: Changes
-      - type: updateBranchProtection
       - type: octokit
         method: pullRequests.createComment
         owner: '%payload.repository.owner.login%'
@@ -386,25 +386,33 @@ steps:
             git commit -m "used callback functions to complete project"
             git push origin changes
             ```
-
-            ### Merge your code
-            After you push, merge this PR and delete the branch! Congratulations! 
         position: 78
 
 
     description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
-  - title: Congratulations and Closing Thoughts
-    event: pull_request.closed
-    description: Congrats on finishing the course!
+  - title: Merge the Pull Request
+    event: push
+    description: Merge your approved Pull Request!
     actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
       - type: createReview
         event: APPROVE
         body: approve.md
         pullRequest: Changes
       - type: mergePullRequest
         pullRequest: Changes
+      - type: respond
+        with: 05-congrats.md
+        issue: Changes
+  - title: Congratulations and Closing Thoughts
+    event: pull_request.closed
+    description: Congrats on finishing the course!
+    actions:
       - type: respond
         with: 05-congrats.md
         issue: Changes
