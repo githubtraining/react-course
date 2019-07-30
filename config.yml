@@ -30,6 +30,7 @@ steps:
       - type: respond
         with: 01-components.md
         issue: Changes
+      - type: updateBranchProtection
       - type: octokit
         method: pullRequests.createComment
         owner: '%payload.repository.owner.login%'
