@@ -90,7 +90,7 @@ steps:
         position: 12
         pullRequest: '%actions.metaPR2.data.number%'
       - type: createPullRequestComment
-        body: explainin-this-state-activity.md
+        body: explaining-this-state-activity.md
         file: src/App.jsx
         position: 32
         pullRequest: '%actions.metaPR2.data.number%'
