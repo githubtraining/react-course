@@ -26,7 +26,7 @@ Run the following lines inside your repo folder in your terminal.
 
 ```
 git add src/App.jsx
-git commit -m "added a header"
+git commit -m "add assignment functionality"
 git push origin changes
 ```
 
