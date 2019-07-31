@@ -34,6 +34,7 @@ steps:
         body: header-component-activity.md
         file: src/App.jsx
         position: 85
+        pullRequest: '%actions.metaPR2.data.number%'
   - title: Props
     actions:
       - type: gate
@@ -50,14 +51,17 @@ steps:
         body: import-child-component-activity.md
         file: src/App.jsx
         position: 3
+        pullRequest: '%actions.metaPR2.data.number%'
       - type: createPullRequestComment
         body: uncomment-assignments-activity.md
         file: src/App.jsx
         position: 46
+        pullRequest: '%actions.metaPR2.data.number%'
       - type: createPullRequestComment
         body: replace-title-activity.md
         file: src/List.jsx
         position: 5
+        pullRequest: '%actions.metaPR2.data.number%'
     description: Learn how to pass data to child components
     event: push
     link: '{{ repoUrl }}/issues/2'
