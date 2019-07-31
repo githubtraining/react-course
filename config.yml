@@ -57,7 +57,7 @@ steps:
         position: 3
         pullRequest: '%actions.metaPR2.data.number%'
   - title: Import a Child Component
-    description: Give your app a title by adding a header component
+    description: Import a child component into its parent
     event: push
     link: '{{ repoUrl }}/issues/2'
     actions:
@@ -74,7 +74,7 @@ steps:
         position: 46
         pullRequest: '%actions.metaPR2.data.number%'
   - title: Uncomment Assignments Functionality
-    description: Give your app a title by adding a header component
+    description: Add the ability to create assignments
     event: push
     link: '{{ repoUrl }}/issues/2'
     actions:
@@ -90,8 +90,8 @@ steps:
         file: src/List.jsx
         position: 5
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: State
-    description: Learn how to deal with dynamic data
+  - title: Replace the Title Prop
+    description: Pass a title prop to the List child component
     event: push
     link: '{{ repoUrl }}/issues/2'
     actions:
