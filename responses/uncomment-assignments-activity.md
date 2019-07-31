@@ -19,4 +19,15 @@ Let's take a look at what this code means. Basically, what it is saying is that 
 
 But how do we specialize the `List` for our assignments? This where our props come into play. We create properties such as `placeholder`, and `currList`. We then assign values to them.
 
-Scroll below for more code to add!
+### Push your code
+Let's push your code to GitHub
+
+Run the following lines inside your repo folder in your terminal.
+
+```
+git add src/App.jsx
+git commit -m "added a header"
+git push origin changes
+```
+
+I'll respond after you push.
