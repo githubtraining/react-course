@@ -35,7 +35,6 @@ steps:
         body: header-component-activity.md
         file: src/App.jsx
         position: 85
-        pullRequest: '%actions.metaPR2.data.number%'
   - title: Add a Header Component
     description: Give your app a title by adding a header component
     event: push
