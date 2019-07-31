@@ -12,7 +12,7 @@ before:
   - type: updateBranchProtection
 
 steps:
-  - title: Setup and Components
+  - title: Add a Header Component
     description: Welcome to React! Let's get started with our project.
     event: pull_request.opened
     link: '{{ repoUrl }}/issues/1'
@@ -99,7 +99,16 @@ steps:
             import List from "./List";
             ```
 
-            Scroll down for the next step.
+            ### Push your code
+            Let's push your code to GitHub
+
+            Run the following lines inside your repo folder in your terminal.
+
+            ```
+            git add src/App.jsx
+            git commit -m "added a header"
+            git push origin changes
+            ```
         position: 3
       - type: octokit
         method: pullRequests.createComment
