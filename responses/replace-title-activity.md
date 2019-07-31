@@ -16,8 +16,9 @@ Awesome! We are using props! You already learned so much!
 To push your code to Github, run the following lines inside the repo folder in your terminal.
 
 ```
-git add src/App.jsx
 git add src/List.jsx
 git commit -m "using props for List component"
 git push origin changes
 ```
+
+I'll respond after you push.

@@ -12,7 +12,7 @@ before:
   - type: updateBranchProtection
 
 steps:
-  - title: Setup and Components
+  - title: Open a Pull Request
     description: Welcome to React! Let's get started with our project.
     event: pull_request.opened
     link: '{{ repoUrl }}/issues/1'
@@ -35,7 +35,10 @@ steps:
         body: header-component-activity.md
         file: src/App.jsx
         position: 85
-  - title: Props
+  - title: Add a Header Component
+    description: Give your app a title by adding a header component
+    event: push
+    link: '{{ repoUrl }}/issues/2'
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -52,20 +55,44 @@ steps:
         file: src/App.jsx
         position: 3
         pullRequest: '%actions.metaPR2.data.number%'
+  - title: Import a Child Component
+    description: Import a child component into its parent
+    event: push
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: getPullRequest
+        pullRequest: Changes
+        action_id: metaPR2
       - type: createPullRequestComment
         body: uncomment-assignments-activity.md
         file: src/App.jsx
         position: 46
         pullRequest: '%actions.metaPR2.data.number%'
+  - title: Uncomment Assignments Functionality
+    description: Add the ability to create assignments
+    event: push
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: getPullRequest
+        pullRequest: Changes
+        action_id: metaPR2
       - type: createPullRequestComment
         body: replace-title-activity.md
         file: src/List.jsx
         position: 5
         pullRequest: '%actions.metaPR2.data.number%'
-    description: Learn how to pass data to child components
+  - title: Replace the Title Prop
+    description: Pass a title prop to the List child component
     event: push
     link: '{{ repoUrl }}/issues/2'
-  - title: State
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -108,10 +135,10 @@ steps:
         file: src/App.jsx
         position: 20
         pullRequest: '%actions.metaPR2.data.number%'
-    description: Learn how to deal with dynamic data
+  - title: Callback Functions
+    description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
-  - title: Callback Functions
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -163,9 +190,6 @@ steps:
         file: src/App.jsx
         position: 78
         pullRequest: '%actions.metaPR2.data.number%'
-    description: Learn how to pass data back to parent components
-    event: push
-    link: '{{ repoUrl }}/issues/2'
   - title: Get Your Pull Request Approved
     event: push
     description: Let's confirm you made the right changes
