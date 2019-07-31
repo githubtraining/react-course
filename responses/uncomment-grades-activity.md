@@ -20,5 +20,4 @@ git commit -m "used callback functions to complete project"
 git push origin changes
 ```
 
-### Merge your code
-After you push, merge this PR and delete the branch! Congratulations! 
+I'll respond after you push.
