@@ -31,41 +31,9 @@ steps:
       - type: respond
         with: 01-components.md
         issue: Changes
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%payload.repository.owner.login%'
-        repo: '%payload.repository.name%'
-        number: '%payload.number%'
-        commit_id: '%payload.pull_request.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Add a header component
-            Let's add a couple of child components and give our app a header.
-
-            Replace the line where it says to replace with this header component:
-
-            ```jsx
-            <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
-            ```
-
-            ### Run your code
-            To run your code, inside your repo folder in your termainal run `npm start`.
-
-            ### What your code should look like
-
-            Your app should look like this!
-            ![App with header](https://user-images.githubusercontent.com/25253905/61294086-eb352e80-a789-11e9-96ab-8b6cb09b3791.png)
-
-            ### Push your code
-            Let's push your code to GitHub
-
-            Run the following lines inside your repo folder in your terminal.
-
-            ```
-            git add src/App.jsx
-            git commit -m "added a header"
-            git push origin changes
-            ```
+      - type: createPullRequestComment
+        body: header-component-activity.md
+        file: src/App.jsx
         position: 85
   - title: Props
     actions:
@@ -79,91 +47,21 @@ steps:
       - type: respond
         with: 02-props.md
         issue: Changes
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Import a Child Component
-
-            Navigate to `List.jsx`. You'll see that we made our own component, `List`. 
-
-            Let's go ahead and import that component.
-
-            At the top of `App.jsx`, replace the line with
-
-            ```js
-            import List from "./List";
-            ```
-
-            Scroll down for the next step.
+      - type: createPullRequestComment
+        body: import-child-component-activity.md
+        file: src/App.jsx
         position: 3
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-              ## Uncomment Assignments Section 
-
-              Go ahead and uncomment the conditional statement underneath where it says to
-              
-              `Uncomment below for step 2`
-
-
-              ### Run your code
-
-              To run your code, move inside your repo folder in your terminal and run `npm start`
-
-              ### What your code should look like
-
-              ![No Title Assignments](https://user-images.githubusercontent.com/25253905/61294177-1ddf2700-a78a-11e9-963d-8b6d2a4f7b82.png)
-
-              ### Code Explanation
-
-              Let's take a look at what this code means. Basically, what it is saying is that when we click the `Assignments` button, the list for assignments will be assigned to the variable `tabChoice`. In our `render` method, we see that `tabChoice` is rendered.
-
-              But how do we specialize the `List` for our assignments? This where our props come into play. We create properties such as `placeholder`, and `currList`. We then assign values to them.
-
-              Scroll below for more code to add!
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: uncomment-assignments-activity.md
+        file: src/App.jsx
         position: 46
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/List.jsx
-        body: |
-              ### Replace the title
-
-              But what does the `List` component do with this information? Let's take a look. 
-
-              Go to `List.jsx`. In the `render` method, in our input tag, you see that we set our `placeholder` to `this.props.placeholder`, and then at the bottom of our `render` method, we loop through out `this.props.currList`, to show each item in the list that we pass. Adding `this.props` tells the component to look for that property that was passed to it.
-
-              Let's go ahead and replace that ugly title with a prop. In our `render` method in `List.jsx`, where it says to replace the title with a prop, replace that with `{this.props.title}`.
-
-              ### Run your code
-
-              To run your code, move inside your repo folder in your terminal and run `npm start`
-
-              ### Push your code
-              Awesome! We are using props! You already learned so much! 
-
-              To push your code to Github, run the following lines inside the repo folder in your terminal.
-
-              ```
-              git add src/App.jsx
-              git add src/List.jsx
-              git commit -m "using props for List component"
-              git push origin changes
-              ```
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: replace-title-activity.md
+        file: src/List.jsx
         position: 5
+        pullRequest: '%actions.metaPR2.data.number%'
     description: Learn how to pass data to child components
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -190,96 +88,26 @@ steps:
       - type: respond
         with: 03-state.md
         issue: Changes
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Add a state variable
-
-            In React, we store dynamic data in **state variables**. Let's take a look at how we store state variables. In `App.jsx`, take a look at the constructor. You'll see that we declare our state variables using `this.state = {.....}`.
-
-
-            Currently, in `App`, we have three state variables:
-            - `buttonClicked` - This stores which button was clicked. It is a state variable because the button that is clicked has the ability to change.
-            - `assignments` - This stores the list of assignments. It is a state variable because the list changes every time a new assignment is added.
-            - `grades` - This should store the grade for each student. However, we have no way to store students, so let's fix that!
-
-            Add a state variable to `App` and name it `students`. Set it equal to an empty list. Make sure to add the comma! 
+      - type: createPullRequestComment
+        body: add-state-variable-activity.md
+        file: src/App.jsx
         position: 12
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-
-            ### Explaining `this.setState`
-
-            Ok, so now we added a state variable, how do we actually change the data?
-
-            Unfortunatley, we can't just do `this.state.studentsList = .....` to change data. I wish it was that simple!
-
-            To set the state of a state variable we have to use the method, `this.setState`.
-
-            Take a look at the above code in `App.jsx`
-
-            When this method is called, it setting the state variable `buttonClicked` to the argument, `buttonName` using `this.setState`.
-
-            In our `render` method we see that `handleButtonClicked` is called when each button is clicked with it's respective arguments. For instance, when the `Assignments` button is clicked, we call `handleButtonClicked("assignments")`.
-
-            We are going to set some state in next steps.
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: explaining-this-state-activity.md
+        file: src/App.jsx
         position: 32
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-
-            ### Create `addStudent` Function
-
-            Now that we see how it works with assignments, let's try it with students! 
-
-            create a method called `addStudent` below the comment
-
-            `addStudent` should take `studentName` as a parameter and then concat that `studentName` to the end of `students` list that we created earlier. 
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: create-addstudent-activity.md
+        file: src/App.jsx
         position: 38
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-
-            ### Bind the function
-
-            Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.
-
-            Go ahead and uncomment this line.
-
-            ### Run your code
-            Run your code with `npm start` to make sure there are no errors.
-
-
-            ### Push your code
-
-            ```
-            git add src/App.jsx
-            git commit -m "using students state variable and setting state"
-            git push origin changes
-
-            ```
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: bind-function-activity.md
+        file: src/App.jsx
         position: 20
+        pullRequest: '%actions.metaPR2.data.number%'
     description: Learn how to deal with dynamic data
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -317,78 +145,24 @@ steps:
       - type: respond
         with: 04-callbackfunctions.md
         issue: Changes
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-              
-              ### Passing Functions as Props
-
-              So where exactly are those functions we created to set state getting called?
-
-              So it looks like we pass the `addAssignment` function as a prop in this chunk of code.
+      - type: createPullRequestComment
+        body: passing-functions-activity.md
+        file: src/App.jsx
         position: 52
+        pullRequest: '%actions.metaPR2.data.number%'
       - type: respond
         with: callback-example.md
         issue: Changes
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Change the props for Students
-
-            Take a look at this conditional in `App.jsx`. 
-
-            We are trying to render the correct component when we click `Students`. Go ahead and uncomment the entire conditional statement.
-
-            Hmmm, there's some stuff wrong about this code. We want to be modifying the `students` list, not the `assignments` list. 
-
-            Let's go ahead and change some props!
-
-            - Change the `placeholder` prop to `"Add Student..."`
-            - Change the `currList` prop to `{this.state.students}`
-            - Change the `addFunction` prop to `{this.addStudent}`
+      - type: createPullRequestComment
+        body: change-props-students-activity.md
+        file: src/App.jsx
         position: 68
-      - type: octokit
-        method: pullRequests.createComment
-        owner: '%actions.metaPR2.data.head.repo.owner.login%'
-        repo: '%actions.metaPR2.data.head.repo.name%'
-        number: '%actions.metaPR2.data.number%'
-        commit_id: '%actions.metaPR2.data.head.sha%'
-        path: src/App.jsx
-        body: |
-            ### Uncomment the Grades Section 
-
-            LAST THING! Let's get our grades working!
-
-            Uncomment this last conditional statement for the grades tab!
-            
-            ### Run your code
-            To run your code, move inside your repo folder in your terminal and run `npm start`
-
-            ### What your code should look like
-
-            Your code should now be able to add assignments, students, and grades! You are done!
-
-            ### Push your code
-            To push your code to Github, run the following lines inside the repo folder in your terminal.
-
-            ```
-            git add src/App.jsx
-            git commit -m "used callback functions to complete project"
-            git push origin changes
-            ```
+        pullRequest: '%actions.metaPR2.data.number%'
+      - type: createPullRequestComment
+        body: uncomment-grades-activity.md
+        file: src/App.jsx
         position: 78
-
-
+        pullRequest: '%actions.metaPR2.data.number%'
     description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
