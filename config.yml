@@ -68,7 +68,6 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
-        pullRequest: '%actions.metaPR2.data.number%'
       - type: createPullRequestComment
         body: uncomment-assignments-activity.md
         file: src/App.jsx
