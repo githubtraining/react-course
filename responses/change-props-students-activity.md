@@ -11,3 +11,18 @@ Let's go ahead and change some props!
 - Change the `placeholder` prop to `"Add Student..."`
 - Change the `currList` prop to `{this.state.students}`
 - Change the `addFunction` prop to `{this.addStudent}`
+
+### Run your code
+Run your code with `npm start` to make sure there are no errors.
+
+
+### Push your code
+
+```
+git add src/App.jsx
+git commit -m "using students state variable and setting state"
+git push origin changes
+
+```
+
+I'll respond after you push.

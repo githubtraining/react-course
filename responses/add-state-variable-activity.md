@@ -9,3 +9,18 @@ Currently, in `App`, we have three state variables:
 - `grades` - This should store the grade for each student. However, we have no way to store students, so let's fix that!
 
 Add a state variable to `App` and name it `students`. Set it equal to an empty list. Make sure to add the comma! 
+
+### Run your code
+Run your code with `npm start` to make sure there are no errors.
+
+
+### Push your code
+
+```
+git add src/App.jsx
+git commit -m "using students state variable and setting state"
+git push origin changes
+
+```
+
+I'll respond after you push.
