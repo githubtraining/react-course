@@ -84,6 +84,17 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/^\s*if\s*\(\s*this.state.buttonClicked\s*===\s*"assignments"\)\s*{\s*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*}\s*\n/gm'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-uncomment.md
+            issue: Changes
       - type: createPullRequestComment
         body: replace-title-activity.md
         file: src/List.jsx
@@ -101,17 +112,6 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
-      - type: getFileContents
-        action_id: fileContents
-        filename: 'src/App.jsx'
-      - type: gate
-        left: '/^\s*if\s*\(\s*this.state.buttonClicked\s*===\s*"assignments"\)\s*{\s*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*}\s*\n/gm'     
-        operator: test
-        right: '%actions.fileContents%'
-        else:
-          - type: respond
-            with: bad-uncomment.md
-            issue: Changes
       - type: respond
         with: 03-state.md
         issue: Changes
@@ -120,6 +120,18 @@ steps:
         file: src/App.jsx
         position: 12
         pullRequest: '%actions.metaPR2.data.number%'
+  - title: Add a State Variable
+    description: Add a students state variable to keep track of students
+    event: push
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: getPullRequest
+        pullRequest: Changes
+        action_id: metaPR2
       - type: createPullRequestComment
         body: explaining-this-state-activity.md
         file: src/App.jsx
@@ -130,13 +142,36 @@ steps:
         file: src/App.jsx
         position: 38
         pullRequest: '%actions.metaPR2.data.number%'
+  - title: Create a Function
+    description: Create a function to add students to our state
+    event: push
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: getPullRequest
+        pullRequest: Changes
+        action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/^\s*addStudent\s*\(\s*studentName\s*\)\s*/gm'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-function.md
+            issue: Changes
       - type: createPullRequestComment
         body: bind-function-activity.md
         file: src/App.jsx
         position: 20
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Callback Functions
-    description: Learn how to pass data back to parent components
+  - title: Bind a Function
+    description: Bind the addStudents function to our class
     event: push
     link: '{{ repoUrl }}/issues/2'
     actions:
@@ -158,17 +193,6 @@ steps:
           - type: respond
             with: bad-uncomment.md
             issue: Changes
-      - type: getPullRequest
-        pullRequest: Changes
-        action_id: metaPR2
-      - type: gate
-        left: '/^\s*addStudent\s*\(\s*studentName\s*\)\s*/gm'     
-        operator: test
-        right: '%actions.fileContents%'
-        else:
-          - type: respond
-            with: bad-function.md
-            issue: Changes
       - type: respond
         with: 04-callbackfunctions.md
         issue: Changes
@@ -185,6 +209,18 @@ steps:
         file: src/App.jsx
         position: 68
         pullRequest: '%actions.metaPR2.data.number%'
+  - title: Pass Functions as Props
+    description: Learn how to pass data back to parent components
+    event: push
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: gate
+        left: '%payload.ref%'
+        operator: ===
+        right: refs/heads/changes
+      - type: getPullRequest
+        pullRequest: Changes
+        action_id: metaPR2
       - type: createPullRequestComment
         body: uncomment-grades-activity.md
         file: src/App.jsx
