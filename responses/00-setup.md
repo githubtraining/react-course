@@ -1,17 +1,17 @@
-### Activity - Clone the Repo and Install Node
+### Activity - Clone the repository and Install Node
 
 Let's go ahead and get started.
 
-First, clone this repo.
+First, clone this repository.
 
-In your terminal, in a folder where you would like to keep this project, clone the repo, and do the following:
+In your terminal, in a folder where you would like to keep this project, clone the repository, and do the following:
 
 ```
 cd intro-react
 git checkout changes
 ```
 
-Next, open the folder in your favorite text editor. I reccommend VSCode.
+Next, open the folder in your favorite text editor. We reccommend VSCode.
 
 Great, now if you don't have Node installed on your computer, go ahead and [install it](https://nodejs.org/en/download/)!
 
@@ -19,7 +19,7 @@ Awesome!
 
 ### Current Functionality 
 
-Now, inside your repo folder, run the following:
+Now, inside your repository folder, run the following:
 
 ```
 npm install
