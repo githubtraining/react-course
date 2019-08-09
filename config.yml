@@ -9,6 +9,8 @@ before:
   - type: createIssue
     title: Welcome to React
     body: 00-setup.md
+    comments:
+      - open-pr.md
   - type: updateBranchProtection
 
 steps:
@@ -25,6 +27,8 @@ steps:
           - type: respond
             with: Make sure the title of your PR is "Changes"
             issue: Welcome to React
+      - type: closeIssue
+        issue: Welcome to React
       - type: respond
         with: 01-congrats.md
         issue: Changes
