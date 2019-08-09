@@ -1,3 +1,5 @@
+# Content
+
 ## How to Talk to your Child - Props
 
 Alright, so we established that components are awesome, but what about reusable components with different properties? 

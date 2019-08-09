@@ -1,3 +1,5 @@
+# Content
+
 ## Throwing it Back - Callback Functions
 
 Alright, let's go ahead and FIX EVERYTHING now! It may sound ambitious but let's dive in.

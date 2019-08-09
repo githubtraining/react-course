@@ -1,3 +1,5 @@
+# Activity
+
 ### Create `addStudent` Function
 
 Now that we see how it works with assignments, let's try it with students! 

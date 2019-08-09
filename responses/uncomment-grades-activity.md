@@ -1,3 +1,5 @@
+# Activity
+
 ### Uncomment the Grades Section 
 
 LAST THING! Let's get our grades working!

@@ -1,3 +1,5 @@
+# Content
+
 ## A Date with Data - State Variables
 
 So now, we learned how to pass data to components, but let's talk about the data itself.
