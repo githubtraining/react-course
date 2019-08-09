@@ -3,7 +3,7 @@
 ### Add a header component
 Let's add a couple of child components and give our app a header.
 
-Replace the line where it says to replace with this header component:
+On line 92 in `App.jsx`, replace the line where it says to replace with this header component:
 
 ```jsx
 <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
