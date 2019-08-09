@@ -1,4 +1,4 @@
-### Passing Functions as Props
+### Look at Code - Passing Functions as Props
 
 So where exactly are those functions we created to set state getting called?
 

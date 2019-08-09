@@ -1,4 +1,4 @@
-### Clone the Repo and Install Node
+### Activity - Clone the Repo and Install Node
 
 Let's go ahead and get started.
 
@@ -51,8 +51,3 @@ This directory contains our `index.html` which directs us to the rest of the web
 
 This is where pretty much ALL of your code will go. You'll notice we have `App.jsx` along with other `jsx` files, but what is `jsx`. Think of `jsx` as a mix between `html` and `javascript`. We can write tags as well as functions and classes. Take a look at `App.jsx`. Some of that stuff might look familiar from `html`, like thos `<div/>` tags. Don't worry, we will get to that stuff in a bit.
 
-
-### Open a Pull Request
-To get started, navigate to the `Pull Requests` tab and open a Pull Request for the `changes` branch. Make sure to title your Pull Request `Changes`. 
-
-Once you open the Pull Request, steps will appear inside the Pull Request itself.

@@ -1,3 +1,5 @@
+# Activity
+
 ### Import a Child Component
 
 Navigate to `List.jsx`. You'll see that we made our own component, `List`. 
