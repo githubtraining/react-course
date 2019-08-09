@@ -1,3 +1,5 @@
+## Look at an example
+
 Navigate to `List.jsx`
 
 Let's take a look at this piece of code in `List.jsx`.
