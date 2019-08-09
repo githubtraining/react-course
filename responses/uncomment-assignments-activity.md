@@ -2,10 +2,11 @@
 
 ## Uncomment Assignments Section 
 
-Go ahead and uncomment the conditional statement underneath where it says to
+Now, that we imported the child component, let's use it in our code. Go ahead and uncomment the conditional statement underneath where it says to
 
-`Uncomment below for step 2`
+`Uncomment below for step 4`
 
+This will render the `List` component for Assignments when the Assignments tab is clicked.
 
 ### Run your code
 
