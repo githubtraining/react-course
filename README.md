@@ -1,32 +1,25 @@
-## Welcome to React!
+<p align="center"><a href="https://lab.github.com/"><img alt="Learning Lab bot" src="https://user-images.githubusercontent.com/16547949/62085817-83232580-b22a-11e9-8693-7c54205b04e5.png"></a></p>
 
-Congratulations on taking some of your first steps into full stack development! 
+<h1 align="center">Course: Introduction to React </h1>
 
-So why did you decide to click and join this course? Ideally, you are a learner who:
+This repository powers the Learning Lab course [_Introduction to React_](https://lab.github.com/githubtraining/introduction-to-react). 
 
-- Understands HTML tags
-- Understands classes and methods in Javascript
-- Understands git and GitHub
+Every Learning Lab course is made up of:
+- a [course repository](https://github.com/githubtraining/react-course), and
+- a [template repository](https://github.com/githubtraining/react-template)
 
-If you understand the topics above, you can start learning modern frontend development with React!
+The course repository is written in YAML and Markdown. The template repository could be written in any language that supports the learning objectives.
 
-So why do we learn React?
+For more information on the goals of this course, check out the [`course-details.md`](course-details.md). 
 
-React has growing popularity in the tech industry because of its simplicity. With a simple knowledge of HTML and Javascript, picking up React shouldn't be too bad.
+## Contribute
 
-### What we will be building
+See something we could improve? Check out the contributing guide in the [community contributors repository](https://github.com/githubtraining/community-contributors/blob/master/CONTRIBUTING.md) for more information on the types of contributions we :heart: and instructions.
 
-So what are we going to be building today? We are going to build a gradebook for teachers! Take a look at [our solution](https://githubtraining.github.io/react-solution/). Here's what the finished app looks like.
+We :heart: our community and take great care to ensure it is fun, safe and rewarding. Please review our [Code of Conduct](https://github.com/githubtraining/community-contributors/blob/master/CODE_OF_CONDUCT.md) for community expectations and guidelines for reporting concerns.
 
-You will be able to add assignments
-![Finished Assignments](https://user-images.githubusercontent.com/25253905/61293228-11f26580-a788-11e9-90ac-9612c2bddf6b.png)
+## License
 
-You will be able to add students
-![Finished Students](https://user-images.githubusercontent.com/25253905/61293769-46b2ec80-a789-11e9-88b3-c660f436f5bf.png)
+All Learning Lab course repositories are licensed under [CC-BY-4.0](../LICENSE) (c) 2019 GitHub, Inc. The template repositories associated with each course may have different licenses.
 
-
-You will be able to assign grades to those students for each assignment
-![Finished Grades](https://user-images.githubusercontent.com/25253905/61295315-9810ab00-a78c-11e9-8bcb-f3e3bb87b2be.png)
-
-### Steps
-Go ahead and join the course!
+When using the GitHub logos, be sure to follow the [GitHub logo guidelines](https://github.com/logos)
