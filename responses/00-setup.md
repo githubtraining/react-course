@@ -1,4 +1,4 @@
-### Clone the Repo and Install Node
+### Activity - Clone the Repo and Install Node
 
 Let's go ahead and get started.
 
@@ -55,4 +55,4 @@ This is where pretty much ALL of your code will go. You'll notice we have `App.j
 ### Open a Pull Request
 To get started, navigate to the `Pull Requests` tab and open a Pull Request for the `changes` branch. Make sure to title your Pull Request `Changes`. 
 
-Once you open the Pull Request, steps will appear inside the Pull Request itself.
+Once you open the Pull Request, steps will appear inside the Pull Request itself. I will close this issue after.
