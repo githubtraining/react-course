@@ -1,3 +1,5 @@
+# Activity
+
 ### Bind the function
 
 Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.

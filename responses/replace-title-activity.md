@@ -1,3 +1,5 @@
+# Activity
+
 ### Replace the title
 
 But what does the `List` component do with this information? Let's take a look. 

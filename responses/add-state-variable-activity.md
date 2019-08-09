@@ -1,3 +1,5 @@
+# Activity
+
 ### Add a state variable
 
 In React, we store dynamic data in **state variables**. Let's take a look at how we store state variables. In `App.jsx`, take a look at the constructor. You'll see that we declare our state variables using `this.state = {.....}`.

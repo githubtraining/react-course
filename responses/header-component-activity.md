@@ -1,3 +1,5 @@
+# Activity
+
 ### Add a header component
 Let's add a couple of child components and give our app a header.
 
@@ -25,3 +27,5 @@ git add src/App.jsx
 git commit -m "added a header"
 git push origin changes
 ```
+
+I'll respond after you push.

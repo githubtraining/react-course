@@ -1,3 +1,5 @@
+# Activity
+
 ## Uncomment Assignments Section 
 
 Go ahead and uncomment the conditional statement underneath where it says to
