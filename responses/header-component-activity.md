@@ -1,31 +1,23 @@
-# Activity
+## Step 2: Adding components
 
-### Add a header component
-Let's add a couple of child components and give our app a header.
+Let's add a child component and give our app a header. At the end of the step, your app should like the following:
 
-On line 92 in `App.jsx`, replace the line where it says to replace with this header component:
-
-```jsx
-<h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
-```
-
-### Run your code
-To run your code, inside your repo folder in your termainal run `npm start`.
-
-### What your code should look like
-
-Your app should look like this!
 ![App with header](https://user-images.githubusercontent.com/25253905/61294086-eb352e80-a789-11e9-96ab-8b6cb09b3791.png)
 
-### Push your code
-Let's push your code to GitHub
+### :keyboard: Activity: Add an `h3` component to `App.jsx`
 
-Run the following lines inside your repo folder in your terminal.
+1. On line 92 in `App.jsx`, replace the line where it says to replace with this header component:
 
-```
-git add src/App.jsx
-git commit -m "added a header"
-git push origin changes
-```
+    ```jsx
+    <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
+    ```
+2. Inside your repository folder in the terminal, run your code: `npm start`.
+3. Commit and push your code to the `changes` branch:
+    ```
+    git add src/App.jsx
+    git commit -m "added a header"
+    git push origin changes
+    ```
 
-I'll respond after you push.
+    I'll respond after you push.
+
