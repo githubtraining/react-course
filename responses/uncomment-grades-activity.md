@@ -1,25 +1,18 @@
-# Activity
+## Step 9 - Uncomment the Grades Section 
 
-### Uncomment the Grades Section 
+LAST THING! Let's get our grades working! At the end of this activity, your code should now be able to add assignments, students, and grades! You will be done!
 
-LAST THING! Let's get our grades working!
 
-Uncomment this last conditional statement for the grades tab!
+### :keyboard: Activity: Uncomment the grades conditional in `App.jsx`
 
-### Run your code
-To run your code, move inside your repo folder in your terminal and run `npm start`
+1. Uncomment the conditional statment for our `grades` tab
+2. To run your code, move inside your repo folder in your terminal and run `npm start`
+3. Commit and push your code to the `changes` branch:
+    ```
+    git add src/App.jsx
+    git commit -m "import list component"
+    git push origin changes
+    ```
 
-### What your code should look like
+    I'll respond after you push.
 
-Your code should now be able to add assignments, students, and grades! You are done!
-
-### Push your code
-To push your code to Github, run the following lines inside the repo folder in your terminal.
-
-```
-git add src/App.jsx
-git commit -m "used callback functions to complete project"
-git push origin changes
-```
-
-I'll respond after you push.
