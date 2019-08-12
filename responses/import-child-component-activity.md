@@ -1,28 +1,21 @@
-# Activity
-
-### Import a Child Component
+## Step 3 -  Import a Child Component
 
 Navigate to `List.jsx`. You'll see that we made our own component, `List`. 
 
 Let's go ahead and import that component.
 
-At the top of `App.jsx`, replace the line with
+### :keyboard: Activity: Import a List component to `App.jsx`
 
-```js
-import List from "./List";
-```
+1. At the top of `App.jsx`, replace the line with
 
-Scroll down for the next step.
+    ```js
+    import List from "./List";
+    ```
+2. Commit and push your code to the `changes` branch:
+    ```
+    git add src/App.jsx
+    git commit -m "import list component"
+    git push origin changes
+    ```
 
-### Push your code
-Let's push your code to GitHub
-
-Run the following lines inside your repo folder in your terminal.
-
-```
-git add src/App.jsx
-git commit -m "import list component"
-git push origin changes
-```
-
-I'll respond after you push.
+    I'll respond after you push.
