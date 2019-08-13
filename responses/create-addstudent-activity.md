@@ -7,7 +7,7 @@ Now that we see how it works with assignments, let's try it with students! We wi
 1. On line 37, create a method called `addStudent` below the comment
    - `addStudent` should take `studentName` as a parameter 
    - `addStudent` should concat `studentName` to the end of `students` list that we created earlier 
-    - Hint: You can copy the same format for the `addAssignment` method
+    - **Hint**: You can copy the same format for the `addAssignment` method
 2. Save your code
 3. To run your code, move inside your repo folder in your terminal and run `npm start`
 4. Exit the process in your terminal using `Ctrl + C`
