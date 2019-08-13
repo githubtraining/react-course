@@ -1,8 +1,8 @@
 ## Look at an example
 
-Navigate to `List.jsx`
+Navigate to `src/List.jsx`
 
-Let's take a look at this piece of code in `List.jsx`.
+Let's take a look at this piece of code between lines 18 and 25 in `src/List.jsx`.
 
 ```jsx
 handleSubmit(event) {

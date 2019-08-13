@@ -7,7 +7,9 @@ Go ahead and uncomment the line to bind `addStudent` to `App`.
 ### :keyboard: Activity: Bind `addStudent` to `App`
 
 1. Uncomment the line to bind `addStudent` to `App`.
-2. Run your code with `npm start` to make sure there are no errors.
+2. Save your code
+3. To run your code, move inside your repo folder in your terminal and run `npm start`
+4. Exit the process in your terminal using `Ctrl + C`
 3. Commit and push your code to the `changes` branch:
     ```
     git add src/App.jsx

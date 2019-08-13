@@ -1,4 +1,4 @@
-### Step 6 - Add a state variable
+### Step 6: Add a state variable
 
 In React, we store dynamic data in **state variables**. Let's take a look at how we store state variables. In `App.jsx`, take a look at the constructor. You'll see that we declare our state variables using `this.state = {.....}`.
 
@@ -11,12 +11,13 @@ Currently, in `App`, we have three state variables:
 ### :keyboard: Activity: Add a state variable to `App.jsx`
 
 1. Add a state variable to `App` and name it `students`. Set it equal to an empty array. Make sure to add the comma! 
-2. Run your code with `npm start` to make sure there are no errors.
-3. Commit and push your code to the `changes` branch:
+2. Save your code
+3. Run your code with `npm start`
+4. Commit and push your code to the `changes` branch:
     ```
     git add src/App.jsx
-    git commit -m "import list component"
+    git commit -m "add a state variable for students"
     git push origin changes
     ```
 
-    I'll respond after you push.
+    After I detect a push, I'll respond

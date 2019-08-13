@@ -1,5 +1,3 @@
-# Content
-
 ## Throwing it Back - Callback Functions
 
 The last thing you need to know before you can call yourself a React Developer is callback functions.  We said that we can pass data to the child with `props`, but what about passing data from the child to the parent? 
