@@ -6,7 +6,7 @@ Go ahead and uncomment the line to bind `addStudent` to `App`.
 
 ### :keyboard: Activity: Bind `addStudent` to `App`
 
-1. On line 19, uncomment the line to bind `addStudent` to `App`.
+1. On line 19, uncomment the line to bind `addStudent` to `App`
 2. Save your code
 3. To run your code, move inside your repo folder in your terminal and run `npm start`
 4. Exit the process in your terminal using `Ctrl + C`
