@@ -17,7 +17,7 @@ Currently, in `App`, we have three state variables:
     ```
     git add src/App.jsx
     git commit -m "add a state variable for students"
-    git push origin changes
+    git push
     ```
 
     After I detect a push, I'll respond

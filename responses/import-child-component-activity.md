@@ -14,7 +14,7 @@ In this step, we will import the `List` component that we created for you into `
     ```
     git add src/App.jsx
     git commit -m "import list component"
-    git push origin changes
+    git push
     ```
 
     After I detect a push, I'll respond

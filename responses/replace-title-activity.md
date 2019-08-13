@@ -14,9 +14,9 @@ Let's go ahead and replace that title with a prop.
 4. Exit the process in your terminal using `Ctrl + C`
 5. Commit and push your code to the `changes` branch:
     ```
-    git add src/App.jsx
+    git add src/List.jsx
     git commit -m "import list component"
-    git push origin changes
+    git push
     ```
 
     After I detect a push, I'll respond

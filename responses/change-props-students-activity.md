@@ -23,7 +23,7 @@ Run your code with `npm start` to make sure there are no errors.
 ```
 git add src/App.jsx
 git commit -m "using students state variable and setting state"
-git push origin changes
+git push
 
 ```
 

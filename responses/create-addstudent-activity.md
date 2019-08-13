@@ -13,7 +13,7 @@ Now that we see how it works with assignments, let's try it with students! We wi
     ```
     git add src/App.jsx
     git commit -m "import list component"
-    git push origin changes
+    git push
     ```
 
     I'll respond after you push.
