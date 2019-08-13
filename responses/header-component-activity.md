@@ -11,14 +11,16 @@ Let's add a child component and give our app a header. At the end of the step, y
     ```jsx
     <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
     ```
-2. Inside your repository folder in the terminal, run your code: `npm start`
-3. Save your code
-4. Commit and push your code to the `changes` branch:
+2. Save your code
+3. To run your code, move inside your repo folder in your terminal and run `npm start`
+4. Exit the process in your terminal using `Ctrl + C`
+5. Commit and push your code to the `changes` branch:
     ```
     git add src/App.jsx
     git commit -m "add a header component"
     git push -u origin changes
     ```
 
-    After I detect a push, I will respond.
+<hr>
+<h3 align="center">Watch below this comment for my response</h3>
 

@@ -1,30 +1,28 @@
-# Activity
+## Step 9: Adding the correct props
 
-### Change the props for Students
+Take a look at this conditional between lines 71 and 80 in `src/App.jsx`. 
 
-Take a look at this conditional in `App.jsx`. 
+We are trying to render the correct component when we click `Students`.
 
-We are trying to render the correct component when we click `Students`. Go ahead and uncomment the entire conditional statement.
-
-Hmmm, there's some stuff wrong about this code. We want to be modifying the `students` list, not the `assignments` list. 
+There are some issues with this code. We want to be modifying the `students` list, not the `assignments` list. 
 
 Let's go ahead and change some props!
 
-- Change the `placeholder` prop to `"Add Student..."`
-- Change the `currList` prop to `{this.state.students}`
-- Change the `addFunction` prop to `{this.addStudent}`
+### :keyboard: Activity: Change the props for Students
 
-### Run your code
-Run your code with `npm start` to make sure there are no errors.
+1. Uncomment the conditional statement between lines 71 and 80
+2. On line 74, change the `placeholder` prop to `"Add Student..."`
+3. On line 75, change the `currList` prop to `{this.state.students}`
+4. On line 76, change the `addFunction` prop to `{this.addStudent}`
+5. Save your code
+6. To run your code, move inside your repo folder in your terminal and run `npm start`
+7. Exit the process in your terminal using `Ctrl + C`
+8. Commit and push your code to the `changes` branch:
+    ```
+    git add src/App.jsx
+    git commit -m "change props for students rendering"
+    git push
+    ```
 
-
-### Push your code
-
-```
-git add src/App.jsx
-git commit -m "using students state variable and setting state"
-git push
-
-```
-
-I'll respond after you push.
+<hr>
+<h3 align="center">Watch below this comment for my response</h3>
