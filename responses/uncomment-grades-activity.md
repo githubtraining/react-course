@@ -16,5 +16,5 @@ LAST THING! Let's get our grades working! At the end of this activity, your code
     git push
     ```
 
-    After I detect a push, I'll respond
-
+<hr>
+<h3 align="center">Watch below this comment for my response</h3>
