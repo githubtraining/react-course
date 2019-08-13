@@ -3,7 +3,7 @@
 LAST THING! Let's get our grades working! At the end of this activity, your code should now be able to add assignments, students, and grades! You will be done!
 
 
-### :keyboard: Activity: Uncomment the grades conditional in `App.jsx`
+### :keyboard: Activity: Uncomment the grades conditional in `src/App.jsx`
 
 1. Uncomment the conditional statment for our `grades` tab
 2. Save your code
@@ -12,9 +12,9 @@ LAST THING! Let's get our grades working! At the end of this activity, your code
 5. Commit and push your code to the `changes` branch:
     ```
     git add src/App.jsx
-    git commit -m "import list component"
-    git push origin changes
+    git commit -m "uncomment grades section"
+    git push
     ```
 
-    I'll respond after you push.
+    After I detect a push, I'll respond
 

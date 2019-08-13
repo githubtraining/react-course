@@ -5,8 +5,8 @@ Congratulations on taking some of your first steps into full stack development!
 So why did you decide to click and join this course? Ideally, you are a learner who:
 
 - Understands HTML tags
-- Understands classes and methods in Javascript
-- Understands git and GitHub
+- Understands classes and methods in JavaScript
+- Understands Git and GitHub
 
 If you understand the topics above, you can start learning modern frontend development with React!
 

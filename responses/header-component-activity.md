@@ -17,7 +17,7 @@ Let's add a child component and give our app a header. At the end of the step, y
     ```
     git add src/App.jsx
     git commit -m "add a header component"
-    git push origin changes
+    git push -u origin changes
     ```
 
     After I detect a push, I will respond.

@@ -20,7 +20,7 @@ But how do we specialize the `List` for our assignments? This where our props co
     ```
     git add src/App.jsx
     git commit -m "uncomment assignment rendering"
-    git push origin changes
+    git push
     ```
 
     After I detect a push, I will respond.

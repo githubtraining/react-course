@@ -14,7 +14,7 @@ Go ahead and uncomment the line to bind `addStudent` to `App`.
     ```
     git add src/App.jsx
     git commit -m "import list component"
-    git push origin changes
+    git push
     ```
 
     I'll respond after you push.
