@@ -14,7 +14,7 @@ before:
   - type: updateBranchProtection
 
 steps:
-  - title: Open a Pull Request
+  - title: Open a pull request
     description: Welcome to React! Let's get started with our project.
     event: pull_request.opened
     link: '{{ repoUrl }}/issues/1'
@@ -39,7 +39,7 @@ steps:
         body: header-component-activity.md
         file: src/App.jsx
         position: 85
-  - title: Add a Header Component
+  - title: Add a header component
     description: Give your app a title by adding a header component
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -59,7 +59,7 @@ steps:
         file: src/App.jsx
         position: 3
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Import a Child Component
+  - title: Import a child component
     description: Import a child component into its parent
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -76,7 +76,7 @@ steps:
         file: src/App.jsx
         position: 46
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Uncomment Assignments Functionality
+  - title: Uncomment assignments section
     description: Add the ability to create assignments
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -104,7 +104,7 @@ steps:
         file: src/List.jsx
         position: 5
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Replace the Title Prop
+  - title: Replace the title prop
     description: Pass a title prop to the List child component
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -124,7 +124,7 @@ steps:
         file: src/App.jsx
         position: 12
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Add a State Variable
+  - title: Add a state variable
     description: Add a students state variable to keep track of students
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -146,8 +146,8 @@ steps:
         file: src/App.jsx
         position: 38
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Create a Function
-    description: Create a function to add students to our state
+  - title: Create a method
+    description: Create a method to add students to our state
     event: push
     link: '{{ repoUrl }}/issues/2'
     actions:
@@ -174,8 +174,8 @@ steps:
         file: src/App.jsx
         position: 20
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Bind a Function
-    description: Bind the addStudents function to our class
+  - title: Bind a method
+    description: Bind the addStudents method to our class
     event: push
     link: '{{ repoUrl }}/issues/2'
     actions:
@@ -213,7 +213,7 @@ steps:
         file: src/App.jsx
         position: 68
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Pass Functions as Props
+  - title: Pass functions as props
     description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
@@ -230,7 +230,7 @@ steps:
         file: src/App.jsx
         position: 78
         pullRequest: '%actions.metaPR2.data.number%'
-  - title: Get Your Pull Request Approved
+  - title: Get your pull request approved
     event: push
     description: Let's confirm you made the right changes
     actions:
@@ -242,7 +242,7 @@ steps:
         event: APPROVE
         body: approve.md
         pullRequest: Changes
-  - title: Merge your Pull Request
+  - title: Merge your pull request
     event: pull_request.closed
     description: Congrats on finishing the course!
     actions:
