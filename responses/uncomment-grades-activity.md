@@ -1,4 +1,4 @@
-## Step 9 - Uncomment the Grades Section 
+## Step 10: Uncomment the Grades Section 
 
 LAST THING! Let's get our grades working! At the end of this activity, your code should now be able to add assignments, students, and grades! You will be done!
 

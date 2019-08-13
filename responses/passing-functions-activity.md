@@ -1,7 +1,7 @@
-### Look at Code - Passing Functions as Props
+### Look at an example of passing functions as props
 
 So where exactly are those functions we created to set state getting called?
 
-So it looks like we pass the `addAssignment` function as a prop in this chunk of code.
+On line 63 in `src/App.jsx`, it looks like we pass the `addAssignment` function as a prop in this chunk of code.
 
-Scroll down to for next steps!
+Scroll down to see how we use the function in `src/List.jsx`

@@ -1,4 +1,4 @@
-## Step 3 -  Import a Child Component
+## Step 3: Import a Child Component
 
 In this step, we will import the `List` component that we created for you into `App`.
 
@@ -10,11 +10,14 @@ In this step, we will import the `List` component that we created for you into `
     import List from "./List";
     ```
 2. Save your code
-3. Commit and push your code to the `changes` branch:
+3. To run your code, move inside your repo folder in your terminal and run `npm start`
+4. Exit the process in your terminal using `Ctrl + C`
+5. Commit and push your code to the `changes` branch:
     ```
     git add src/App.jsx
     git commit -m "import list component"
     git push
     ```
 
-    After I detect a push, I'll respond
+<hr>
+<h3 align="center">Watch below this comment for my response</h3>

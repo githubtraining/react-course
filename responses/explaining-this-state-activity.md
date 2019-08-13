@@ -6,10 +6,8 @@ Unfortunatley, we can't just do `this.state.studentsList = .....` to change data
 
 To set the state of a state variable we have to use the method, `this.setState`.
 
-Take a look at the above code in `App.jsx`
+Take at the method on line 30 in `src/App.jsx`
 
-When this method is called, it setting the state variable `buttonClicked` to the argument, `buttonName` using `this.setState`.
-
-In our `render` method we see that `handleButtonClicked` is called when each button is clicked with it's respective arguments. For instance, when the `Assignments` button is clicked, we call `handleButtonClicked("assignments")`.
+When this method is called, it is adding `assignmentName` to our state variable `assignments` by setting the state of `assignments` to itself with the concatenation of `assignmentName`.
 
 We are going to set some state in next steps.

@@ -1,5 +1,9 @@
-## Merge the Pull Request
+## Step 11: Merge your pull request
 
-Changes are approved!
+We have approved all of your chages
 
-Go ahead and merge the Pull Request!
+### :keyboard: Activity: Merge the `changes` branch into `master`
+1. Click the `Merge Pull Request` button
+
+<hr>
+<h3 align="center">Watch below this comment for my response</h3>
