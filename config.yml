@@ -205,9 +205,6 @@ steps:
         file: src/App.jsx
         position: 52
         pullRequest: '%actions.metaPR2.data.number%'
-      - type: respond
-        with: callback-example.md
-        issue: Changes
       - type: createPullRequestComment
         body: change-props-students-activity.md
         file: src/App.jsx

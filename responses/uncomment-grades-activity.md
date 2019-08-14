@@ -5,7 +5,7 @@ LAST THING! Let's get our grades working! At the end of this activity, your code
 
 ### :keyboard: Activity: Uncomment the grades conditional in `src/App.jsx`
 
-1. Uncomment the conditional statment for our `grades` tab
+1. Uncomment the conditional statment between lines 83 and 92 for our `grades` tab
 2. Save your code
 3. To run your code, move inside your repo folder in your terminal and run `npm start`
 4. Exit the process using `Ctrl + C`
