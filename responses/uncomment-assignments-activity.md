@@ -12,7 +12,7 @@ But how do we specialize the `List` for our assignments? This where our props co
 
 ### :keyboard: Activity: Uncomment the assignments conditional in `src/App.jsx`
 
-1. Go ahead and uncomment the conditional statement betweens lines 52 and 61 underneath where it says to `Uncomment below for step 4` 
+1. Go ahead and uncomment the conditional statement betweens lines 52 and 61 underneath where it says to `Uncomment below to render assignments` 
 2. Save your code
 3. To run your code, move inside your repo folder in your terminal and run `npm start`
 4. Exit the process in your terminal using `Ctrl + C`
