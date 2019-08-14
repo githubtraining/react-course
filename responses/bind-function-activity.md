@@ -1,4 +1,4 @@
-### Step 8: Binding a function
+### Step 8: Binding a method
 
 Also, since we created a method that changes the a state variable, we have to bind it to our class, so that when we call it, we know what method to reference.
 
