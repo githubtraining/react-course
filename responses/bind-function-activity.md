@@ -13,7 +13,7 @@ Go ahead and uncomment the line to bind `addStudent` to `App`.
 3. Commit and push your code to the `changes` branch:
     ```
     git add src/App.jsx
-    git commit -m "import list component"
+    git commit -m "bind addStudent to App"
     git push
     ```
 
