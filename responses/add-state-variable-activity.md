@@ -8,7 +8,7 @@ Currently, in `App`, we have three state variables:
 - `assignments` - This stores the list of assignments. It is a state variable because the list changes every time a new assignment is added.
 - `grades` - This should store the grade for each student. However, we have no way to store students, so let's fix that!
 
-### :keyboard: Activity: Add a state variable to `App.jsx`
+### :keyboard: Activity: Add a state variable to `src/App.jsx`
 
 1. On line 11, add a state variable named `students` 
 2. Set `students` equal to an empty array

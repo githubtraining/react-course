@@ -7,7 +7,7 @@
 
 In our [solution](https://githubtraining.github.io/react-solution/), our assignments page looks like the above. The overall webpage is a component that we call `App` and inside `App` there's are other components like buttons, titles, and even other custom components that we can create (like the Assginments List).
 
-Take a look at the following line in `App.jsx`. 
+Take a look at the following line in `src/App.jsx`. 
 
 ```javascript
 class App extends React.Component
