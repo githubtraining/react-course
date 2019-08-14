@@ -235,6 +235,17 @@ steps:
         left: '%payload.ref%'
         operator: ===
         right: refs/heads/changes
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/^\s*if\s*\(\s*this.state.buttonClicked\s*===\s*"grades"\)\s*{\s*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*}\s*\n/gm'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-uncomment.md
+            issue: Changes
       - type: createReview
         event: APPROVE
         body: approve.md
