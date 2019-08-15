@@ -44,6 +44,7 @@ steps:
     description: Give your app a title by adding a header component
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/aBZ6vaPpNS4
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -64,6 +65,7 @@ steps:
     description: Import a child component into its parent
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/NXnI05i5TI8
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -81,6 +83,7 @@ steps:
     description: Add the ability to create assignments
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/SrpOpss4Luw
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -109,6 +112,7 @@ steps:
     description: Pass a title prop to the List child component
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/3wZV8nQoJQA
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -129,6 +133,7 @@ steps:
     description: Add a students state variable to keep track of students
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/l3nf0C2Xil4
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -151,6 +156,7 @@ steps:
     description: Create a method to add students to our state
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/Rt9E3beRrOc
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -179,6 +185,7 @@ steps:
     description: Bind the addStudents method to our class
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/sJJXnhLuo04
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -215,6 +222,7 @@ steps:
     description: Learn how to pass data back to parent components
     event: push
     link: '{{ repoUrl }}/issues/2'
+    video: https://www.youtube.com/embed/Rass5Io27r0
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -231,6 +239,7 @@ steps:
   - title: Get your pull request approved
     event: push
     description: Let's confirm you made the right changes
+    video: https://www.youtube.com/embed/J6M-oi9-LVI
     actions:
       - type: gate
         left: '%payload.ref%'
@@ -254,6 +263,7 @@ steps:
   - title: Merge your pull request
     event: pull_request.closed
     description: Congrats on finishing the course!
+    video: https://www.youtube.com/embed/uJGGBhdivYQ
     actions:
       - type: respond
         with: 05-congrats.md
