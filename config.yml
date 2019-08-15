@@ -18,6 +18,7 @@ steps:
     description: Welcome to React! Let's get started with our project.
     event: pull_request.opened
     link: '{{ repoUrl }}/issues/1'
+    video: https://youtu.be/RlDJqryBkkI
     actions:
       - type: gate
         left: '%payload.pull_request.title%'
