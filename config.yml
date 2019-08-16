@@ -177,7 +177,7 @@ steps:
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
-        filename: 'src/List.jsx'
+        filename: 'src/App.jsx'
       - type: gate
         left: '/\s*students\s*:\s*\[\s*\]\s*,\s*/gm'     
         operator: test
