@@ -57,7 +57,7 @@ steps:
         action_id: fileContents
         filename: 'src/App.jsx'
       - type: gate
-        left: '/^\s*<\s*h3\s*className\s*=\s*"\s*Box-title\s*d-flex\s*flex-justify-center\s*"\s*>\s*GradeBook\s*<\s*\/\s*h3\s*>/g'     
+        left: '/^\s*<\s*h3\s*className\s*=\s*"\s*Box-title\s*d-flex\s*flex-justify-center\s*"\s*>\s*GradeBook\s*<\s*\/\s*h3\s*>/gm'     
         operator: test
         right: '%actions.fileContents%'
         else:
@@ -89,7 +89,7 @@ steps:
         action_id: fileContents
         filename: 'src/App.jsx'
       - type: gate
-        left: '/^\s*import\s*List\s*from\s*"\s*\.\/List\s*"\s*;\s*/g'     
+        left: '/^\s*import\s*List\s*from\s*"\s*\.\/List\s*"\s*;\s*/gm'     
         operator: test
         right: '%actions.fileContents%'
         else:
@@ -147,7 +147,7 @@ steps:
         action_id: fileContents
         filename: 'src/List.jsx'
       - type: gate
-        left: '/^\s*>\s*{\s*this\.props\.title\s*}\s*<\s*/g'     
+        left: '/^\s*>\s*{\s*this\.props\.title\s*}\s*<\s*/gm'     
         operator: test
         right: '%actions.fileContents%'
         else:
@@ -179,7 +179,7 @@ steps:
         action_id: fileContents
         filename: 'src/List.jsx'
       - type: gate
-        left: '/^\s*students\s*:\s*\[\s*\]\s*,\s*/g'     
+        left: '/^\s*students\s*:\s*\[\s*\]\s*,\s*/gm'     
         operator: test
         right: '%actions.fileContents%'
         else:
