@@ -147,7 +147,7 @@ steps:
         action_id: fileContents
         filename: 'src/List.jsx'
       - type: gate
-        left: '/^\s*>\s*{\s*this\.props\.title\s*}\s*<\s*/gm'     
+        left: '/>\s*{\s*this\.props\.title\s*}\s*<\s*/gm'     
         operator: test
         right: '%actions.fileContents%'
         else:
