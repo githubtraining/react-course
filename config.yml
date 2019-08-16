@@ -62,7 +62,7 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: bad-header.md
             issue: Changes
       - type: respond
         with: 02-props.md
@@ -94,7 +94,7 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: bad-import.md
             issue: Changes
       - type: createPullRequestComment
         body: uncomment-assignments-activity.md
@@ -152,7 +152,7 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: bad-prop.md
             issue: Changes
       - type: respond
         with: 03-state.md
@@ -184,7 +184,7 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: bad-state.md
             issue: Changes
       - type: createPullRequestComment
         body: explaining-this-state-activity.md
@@ -284,7 +284,7 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: bad-replace.md
             issue: Changes
       - type: createPullRequestComment
         body: uncomment-grades-activity.md
