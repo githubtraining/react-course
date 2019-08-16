@@ -179,7 +179,7 @@ steps:
         action_id: fileContents
         filename: 'src/List.jsx'
       - type: gate
-        left: '/^\s*students\s*:\s*\[\s*\]\s*,\s*/gm'     
+        left: '/\s*students\s*:\s*\[\s*\]\s*,\s*/gm'     
         operator: test
         right: '%actions.fileContents%'
         else:
@@ -279,7 +279,7 @@ steps:
         action_id: fileContents
         filename: 'src/App.jsx'
       - type: gate
-        left: '/^\s*placeholder\s*=\s*"Add\sStudent\.\.\."\s*\n\s*currList\s*=\s*{\s*this\.state\.students\s*}\n\s*addFunction\s*=\s*{\s*this\.addStudent\s*}\s*\n/gm'
+        left: '/\s*placeholder\s*=\s*"Add\sStudent\.\.\."\s*\n\s*currList\s*=\s*{\s*this\.state\.students\s*}\n\s*addFunction\s*=\s*{\s*this\.addStudent\s*}\s*\n/gm'
         operator: test
         right: '%actions.fileContents%'
         else:
