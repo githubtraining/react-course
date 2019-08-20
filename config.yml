@@ -53,6 +53,17 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/^\s*<\s*h3\s*className\s*=\s*"\s*Box-title\s*d-flex\s*flex-justify-center\s*"\s*>\s*GradeBook\s*<\s*\/\s*h3\s*>/gm'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-header.md
+            issue: Changes
       - type: respond
         with: 02-props.md
         issue: Changes
@@ -74,6 +85,17 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/^\s*import\s*List\s*from\s*"\s*\.\/List\s*"\s*;\s*/gm'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-import.md
+            issue: Changes
       - type: createPullRequestComment
         body: uncomment-assignments-activity.md
         file: src/App.jsx
@@ -121,6 +143,17 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/List.jsx'
+      - type: gate
+        left: '/>\s*{\s*this\.props\.title\s*}\s*<\s*/gm'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-prop.md
+            issue: Changes
       - type: respond
         with: 03-state.md
         issue: Changes
@@ -142,6 +175,17 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/\s*students\s*:\s*\[\s*\]\s*,\s*/gm'     
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-state.md
+            issue: Changes
       - type: createPullRequestComment
         body: explaining-this-state-activity.md
         file: src/App.jsx
@@ -231,6 +275,17 @@ steps:
       - type: getPullRequest
         pullRequest: Changes
         action_id: metaPR2
+      - type: getFileContents
+        action_id: fileContents
+        filename: 'src/App.jsx'
+      - type: gate
+        left: '/\s*placeholder\s*=\s*"Add\sStudent\.\.\."\s*\n\s*currList\s*=\s*{\s*this\.state\.students\s*}\n\s*addFunction\s*=\s*{\s*this\.addStudent\s*}\s*\n/gm'
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+          - type: respond
+            with: bad-replace.md
+            issue: Changes
       - type: createPullRequestComment
         body: uncomment-grades-activity.md
         file: src/App.jsx
