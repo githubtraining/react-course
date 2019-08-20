@@ -1,4 +1,3 @@
-
 # Set up a React Application Locally
 
 Hello and welcome!
