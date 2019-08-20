@@ -16,7 +16,7 @@ Now that we imported the child component, let's use it in our code. At the end o
 2. Save your changes
 3. To run your code, move inside your repo folder in your terminal and run `npm start`
 4. Exit the process in your terminal using `Ctrl + C`
-5. Stage, commit, and push your code to the `changes` branch:
+5. Stage, commit, and push your changes to the `changes` branch:
     ```
     git add src/App.jsx
     git commit -m "uncomment assignment rendering"
