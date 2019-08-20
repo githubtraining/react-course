@@ -15,7 +15,7 @@ Let's go ahead and replace that title with a prop.
 5. Commit and push your code to the `changes` branch:
     ```
     git add src/List.jsx
-    git commit -m "import list component"
+    git commit -m "use a prop"
     git push
     ```
 
