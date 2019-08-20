@@ -31,9 +31,6 @@ steps:
       - type: closeIssue
         issue: Welcome to React
       - type: respond
-        with: 01-congrats.md
-        issue: Changes
-      - type: respond
         with: 01-components.md
         issue: Changes
       - type: createPullRequestComment
