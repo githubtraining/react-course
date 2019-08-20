@@ -8,9 +8,9 @@ template:
 before:
   - type: createIssue
     title: Welcome to React
-    body: 00-setup.md
+    body: 00_setup.md
     comments:
-      - open-pr.md
+      - 00_open-pr.md
   - type: updateBranchProtection
 
 steps:
