@@ -1,6 +1,6 @@
 ### :keyboard: Activity: Open a Pull Request
-1. Go to this [link]({{repoUrl}}/compare/master...changes) and open a pull request for the `changes` branch
+
+1. [Create a pull request to base `master` from `changes` branch]({{repoUrl}}/compare/master...changes)
 2. Title your pull request `Changes`
 
-
-Once you open the Pull Request, steps will appear inside the Pull Request itself. I will close this issue after.
+I'll respond with next steps in your pull request.
