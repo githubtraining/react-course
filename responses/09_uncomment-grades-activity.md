@@ -1,15 +1,14 @@
-## Step 10: Uncomment the Grades Section 
+## Step 10: Include Grades
 
-LAST THING! Let's get our grades working! At the end of this activity, your code should now be able to add assignments, students, and grades! You will be done!
-
+Let's get our grades working! At the end of this activity, your code should now be able to add assignments, students, and grades.
 
 ### :keyboard: Activity: Uncomment the grades conditional in `src/App.jsx`
 
-1. Uncomment the conditional statment between lines 83 and 92 for our `grades` tab
-2. Save your code
+1. In the `src/App.jsx` file, uncomment the conditional statement between lines 77 and 86 for our `grades` tab
+2. Save your changes
 3. To run your code, move inside your repo folder in your terminal and run `npm start`
 4. Exit the process using `Ctrl + C`
-5. Commit and push your code to the `changes` branch:
+5. Stage, commit, and push your changes to the `changes` branch:
     ```
     git add src/App.jsx
     git commit -m "uncomment grades section"
@@ -17,4 +16,4 @@ LAST THING! Let's get our grades working! At the end of this activity, your code
     ```
 
 <hr>
-<h3 align="center">Watch below this comment for my response</h3>
+<h3 align="center">Watch below this comment for my response.</h3>

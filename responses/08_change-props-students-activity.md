@@ -1,23 +1,19 @@
 ## Step 9: Adding the correct props
 
-Take a look at this conditional between lines 71 and 80 in `src/App.jsx`. 
+There are some issues with this code. We want to be modifying the `students` list, not the `assignments` list.
 
-We are trying to render the correct component when we click `Students`.
-
-There are some issues with this code. We want to be modifying the `students` list, not the `assignments` list. 
-
-Let's go ahead and change some props!
+Let's change some props between lines 71 and 80 to render the correct components when we click `Students`.
 
 ### :keyboard: Activity: Change the props for Students
 
-1. Uncomment the conditional statement between lines 71 and 80
-2. On line 74, change the `placeholder` prop to `"Add Student..."`
-3. On line 75, change the `currList` prop to `{this.state.students}`
-4. On line 76, change the `addFunction` prop to `{this.addStudent}`
-5. Save your code
+1. Uncomment the conditional statement between lines 65 and 75 of `src/App.jsx`
+2. On line 68, change the `placeholder` prop to `"Add Student..."`
+3. On line 69, change the `currList` prop to `{this.state.students}`
+4. On line 70, change the `addFunction` prop to `{this.addStudent}`
+5. Save your changes
 6. To run your code, move inside your repo folder in your terminal and run `npm start`
 7. Exit the process in your terminal using `Ctrl + C`
-8. Commit and push your code to the `changes` branch:
+8. Stage, commit, and push your changes to the `changes` branch:
     ```
     git add src/App.jsx
     git commit -m "change props for students rendering"
@@ -25,4 +21,4 @@ Let's go ahead and change some props!
     ```
 
 <hr>
-<h3 align="center">Watch below this comment for my response</h3>
+<h3 align="center">Watch below this comment for my response.</h3>
