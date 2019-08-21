@@ -1,4 +1,9 @@
-It looks like you did not replace the title with a prop in the correct place in `src/List.jsx`
+It looks like you did not replace the title with a prop in the correct place.
+
+Ensure that:
+- you're editing `src/List.jsx`
+- you edit line 31
+- your prop is within the `<p className="h2">` and `</p>` tag. 
 
 Try again!
 
