@@ -1,8 +1,8 @@
 ### Explaining `this.setState`
 
-Ok, so now we added a state variable, how do we actually change the data?
+How do we change data within a state variable?
 
-Unfortunatley, we can't just do `this.state.studentsList = .....` to change data.
+Unfortunately, we can't just do `this.state.studentsList = .....` to change data.
 
 To set the state of a state variable we have to use the method, `this.setState`.
 

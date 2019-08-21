@@ -8,12 +8,14 @@ template:
 before:
   - type: createIssue
     title: Welcome to React
-    body: 00-setup.md
+    body: 00_setup.md
     comments:
-      - open-pr.md
+      - 00_open-pr.md
   - type: updateBranchProtection
 
 steps:
+
+  # Step 1: User opens a pull request after cloning and validating Node is installed
   - title: Open a pull request
     description: Welcome to React! Let's get started with our project.
     event: pull_request.opened
@@ -31,15 +33,14 @@ steps:
       - type: closeIssue
         issue: Welcome to React
       - type: respond
-        with: 01-congrats.md
-        issue: Changes
-      - type: respond
-        with: 01-components.md
+        with: 01_components.md
         issue: Changes
       - type: createPullRequestComment
-        body: header-component-activity.md
+        body: 01_header-component-activity.md
         file: src/App.jsx
         position: 85
+
+  # Step 2: User adds a header component
   - title: Add a header component
     description: Give your app a title by adding a header component
     event: push
@@ -62,16 +63,18 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-header.md
+            with: 02_bad-header.md
             issue: Changes
       - type: respond
-        with: 02-props.md
+        with: 02_props.md
         issue: Changes
       - type: createPullRequestComment
-        body: import-child-component-activity.md
+        body: 02_import-child-component-activity.md
         file: src/App.jsx
         position: 3
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 3: User makes changes to import a child component
   - title: Import a child component
     description: Import a child component into its parent
     event: push
@@ -94,13 +97,15 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-import.md
+            with: 03_bad-import.md
             issue: Changes
       - type: createPullRequestComment
-        body: uncomment-assignments-activity.md
+        body: 03_uncomment-assignments-activity.md
         file: src/App.jsx
         position: 46
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 4: Add an assignments section by uncommenting
   - title: Uncomment assignments section
     description: Add the ability to create assignments
     event: push
@@ -123,13 +128,15 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: 04_bad-uncomment.md
             issue: Changes
       - type: createPullRequestComment
-        body: replace-title-activity.md
+        body: 04_replace-title-activity.md
         file: src/List.jsx
         position: 5
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 5: Replace the title prop
   - title: Replace the title prop
     description: Pass a title prop to the List child component
     event: push
@@ -152,16 +159,18 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-prop.md
+            with: 05_bad-prop.md
             issue: Changes
       - type: respond
-        with: 03-state.md
+        with: 05_state.md
         issue: Changes
       - type: createPullRequestComment
-        body: add-state-variable-activity.md
+        body: 05_add-state-variable-activity.md
         file: src/App.jsx
         position: 12
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 6: add a state variable
   - title: Add a state variable
     description: Add a students state variable to keep track of students
     event: push
@@ -184,18 +193,20 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-state.md
+            with: 06_bad-state.md
             issue: Changes
       - type: createPullRequestComment
-        body: explaining-this-state-activity.md
+        body: 06_explaining-this-state-activity.md
         file: src/App.jsx
         position: 32
         pullRequest: '%actions.metaPR2.data.number%'
       - type: createPullRequestComment
-        body: create-addstudent-activity.md
+        body: 06_create-addstudent-activity.md
         file: src/App.jsx
         position: 38
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 7: Create a method
   - title: Create a method
     description: Create a method to add students to our state
     event: push
@@ -218,13 +229,15 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-function.md
+            with: 07_bad-function.md
             issue: Changes
       - type: createPullRequestComment
-        body: bind-function-activity.md
+        body: 07_bind-function-activity.md
         file: src/App.jsx
         position: 20
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 8: Bind a method
   - title: Bind a method
     description: Bind the addStudents method to our class
     event: push
@@ -247,21 +260,23 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: 04_bad-uncomment.md
             issue: Changes
       - type: respond
-        with: 04-callbackfunctions.md
+        with: 08_callbackfunctions.md
         issue: Changes
       - type: createPullRequestComment
-        body: passing-functions-activity.md
+        body: 08_passing-functions-activity.md
         file: src/App.jsx
         position: 52
         pullRequest: '%actions.metaPR2.data.number%'
       - type: createPullRequestComment
-        body: change-props-students-activity.md
+        body: 08_change-props-students-activity.md
         file: src/App.jsx
         position: 68
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 9: Pass functions as props
   - title: Pass functions as props
     description: Learn how to pass data back to parent components
     event: push
@@ -284,13 +299,15 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-replace.md
+            with: 09_bad-replace.md
             issue: Changes
       - type: createPullRequestComment
-        body: uncomment-grades-activity.md
+        body: 09_uncomment-grades-activity.md
         file: src/App.jsx
         position: 78
         pullRequest: '%actions.metaPR2.data.number%'
+
+  # Step 10: Get approval
   - title: Get your pull request approved
     event: push
     description: Let's confirm you made the right changes
@@ -309,18 +326,20 @@ steps:
         right: '%actions.fileContents%'
         else:
           - type: respond
-            with: bad-uncomment.md
+            with: 04_bad-uncomment.md
             issue: Changes
       - type: createReview
         event: APPROVE
-        body: approve.md
+        body: 10_approve.md
         pullRequest: Changes
+
+  # Step 11: Merge pull request
   - title: Merge your pull request
     event: pull_request.closed
     description: Congrats on finishing the course!
     video: https://www.youtube.com/embed/uJGGBhdivYQ
     actions:
       - type: respond
-        with: 05-congrats.md
+        with: 11_congrats.md
         issue: Changes
     

@@ -1,6 +1,6 @@
-## Congrats on Finishing the Course!!
+## Congratulations!
 
-Congratulations on finishing Introduction to React. You can go ahead and pull from master.
+Congratulations on finishing Introduction to React. To update your local course, use `git checkout master` and `git pull`.
 
 Although this course certainly doesn't mean you are a React expert, we hope you have the tools to explore further content on your own. Here are some cool resources for further learning:
 
