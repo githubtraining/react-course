@@ -1,5 +1,4 @@
 title: Introduction to React
-tagline: Take your first steps in modern frontend development
 description: In this course, you will learn the basics of React.js through building a gradebook web application to manage assignments, students, and grades.
 template:
   name: intro-react
