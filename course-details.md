@@ -34,16 +34,7 @@ And when you're done you'll be able to:
 
 ## What you'll build
 We'll be building a gradebook for teachers!
-
-You will be able to add assignments:
-![Finished Assignments](https://user-images.githubusercontent.com/25253905/61293228-11f26580-a788-11e9-90ac-9612c2bddf6b.png)
-
-You will be able to add students:
-![Finished Students](https://user-images.githubusercontent.com/25253905/61293769-46b2ec80-a789-11e9-88b3-c660f436f5bf.png)
-
-You will be able to assign grades to those students for each assignment:
-![Finished Grades](https://user-images.githubusercontent.com/25253905/61295315-9810ab00-a78c-11e9-8bcb-f3e3bb87b2be.png)
-
+![gradebook](https://user-images.githubusercontent.com/57373296/75572829-90ef9200-5a29-11ea-818b-1b1de3fa8afa.gif)
 
 - Completed [source repository](https://github.com/githubtraining/react-course)
 - Completed [Gradebook](https://githubtraining.github.io/react-solution/).
