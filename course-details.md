@@ -49,7 +49,9 @@ You will be able to assign grades to those students for each assignment:
 - Completed [Gradebook](https://githubtraining.github.io/react-solution/).
 
 ## Prerequisites
-Before starting this course, we recommend completing the [Introduction to GitHub Learning Lab](https://lab.github.com/githubtraining/introduction-to-github) first with the option for working locally in the command line.
+Before starting this course, we recommend:
+- Completing the [Introduction to GitHub Learning Lab](https://lab.github.com/githubtraining/introduction-to-github) with the option for working locally in the command line.  
+- Completing the [Introduction to HTML Learning Lab](https://lab.github.com/githubtraining/introduction-to-html/)
 
 
 ## Projects used
