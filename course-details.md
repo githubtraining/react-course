@@ -34,7 +34,7 @@ And when you're done you'll be able to:
 
 ## What you'll build
 We'll be building a gradebook for teachers!
-![gradebook](https://user-images.githubusercontent.com/57373296/75572829-90ef9200-5a29-11ea-818b-1b1de3fa8afa.gif)
+![gradebook](https://user-images.githubusercontent.com/57373296/75573382-b92bc080-5a2a-11ea-87f8-afa4effedaa3.gif)
 
 - Completed [source repository](https://github.com/githubtraining/react-course)
 - Completed [Gradebook](https://githubtraining.github.io/react-solution/).
