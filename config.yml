@@ -1,12 +1,12 @@
-title: Stu Introduction to React
-description: In this course, you will learn the basics of React.js through building a gradebook web application to manage assignments, students, and grades and stuff.
+title: GH for Canberra CSAs and Rob
+description: Get started with Issues, Projects, Actions and Code
 template:
   name: intro-react
   repo: react-template
   description: 'A robot powered training repository :robot:'
 before:
   - type: createIssue
-    title: Welcome to React
+    title: Welcome to GitHub
     body: 00_setup.md
     comments:
       - 00_open-pr.md
@@ -16,10 +16,9 @@ steps:
 
   # Step 1: User opens a pull request after cloning and validating Node is installed
   - title: Open a pull request
-    description: Welcome to React! Let's get started with our project.
+    description: Welcome to GitHub! Let's get started with our project.
     event: pull_request.opened
     link: '{{ repoUrl }}/issues/1'
-    video: https://www.youtube.com/embed/RlDJqryBkkI
     actions:
       - type: gate
         left: '%payload.pull_request.title%'
@@ -28,9 +27,9 @@ steps:
         else:
           - type: respond
             with: Make sure the title of your PR is "Changes"
-            issue: Welcome to React
+            issue: Welcome to GitHub
       - type: closeIssue
-        issue: Welcome to React
+        issue: Welcome to GitHub
       - type: respond
         with: 01_components.md
         issue: Changes
