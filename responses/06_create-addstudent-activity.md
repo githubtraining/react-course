@@ -14,7 +14,7 @@ Now that we see how it works with assignments, let's try it with students! We wi
 5. Stage, commit, and push your changes to the `changes` branch:
     ```
     git add src/App.jsx
-    git commit -m "create addStudents method"
+    git commit -m "create addStudent method"
     git push
     ```
 

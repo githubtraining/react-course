@@ -2,7 +2,7 @@
 
 What does the `List` component do with the information we just included? Adding `this.props` tells the component to look for the property that was passed to it.
 
-To see, open the `src/List.jsx` file. In the `render` method, in our input tag, notice that we set our `placeholder` to `this.props.placeholder`. Then, at the bottom of our `render` method, we loop through out `this.props.currList`. This shows each item in the list that we pass.
+To see, open the `src/List.jsx` file. In the `render` method, in our input tag, notice that we set our `placeholder` to `this.props.placeholder`. Then, at the bottom of our `render` method, we loop through our `this.props.currList`. This shows each item in the list that we pass.
 
 Let's go ahead and replace the current title with another `prop`.
 
