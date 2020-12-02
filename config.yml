@@ -21,14 +21,6 @@ steps:
     link: '{{ repoUrl }}/issues/1'
     video: https://www.youtube.com/embed/RlDJqryBkkI
     actions:
-      - type: gate
-        left: '%payload.pull_request.title%'
-        right: Changes
-        operator: ===
-        else:
-          - type: respond
-            with: Make sure the title of your PR is "Changes"
-            issue: Welcome to React
       - type: closeIssue
         issue: Welcome to React
       - type: respond
