@@ -43,7 +43,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
