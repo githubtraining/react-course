@@ -25,7 +25,7 @@ steps:
         issue: Welcome to React
       - type: respond
         with: 01_components.md
-        issue: Changes
+        issue: 2
       - type: createPullRequestComment
         body: 01_header-component-activity.md
         file: src/App.jsx
@@ -55,10 +55,10 @@ steps:
         else:
           - type: respond
             with: 02_bad-header.md
-            issue: Changes
+            issue: 2
       - type: respond
         with: 02_props.md
-        issue: Changes
+        issue: 2
       - type: createPullRequestComment
         body: 02_import-child-component-activity.md
         file: src/App.jsx
@@ -77,7 +77,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
@@ -89,7 +89,7 @@ steps:
         else:
           - type: respond
             with: 03_bad-import.md
-            issue: Changes
+            issue: 2
       - type: createPullRequestComment
         body: 03_uncomment-assignments-activity.md
         file: src/App.jsx
@@ -108,7 +108,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
@@ -120,7 +120,7 @@ steps:
         else:
           - type: respond
             with: 04_bad-uncomment.md
-            issue: Changes
+            issue: 2
       - type: createPullRequestComment
         body: 04_replace-title-activity.md
         file: src/List.jsx
@@ -139,7 +139,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
@@ -151,10 +151,10 @@ steps:
         else:
           - type: respond
             with: 05_bad-prop.md
-            issue: Changes
+            issue: 2
       - type: respond
         with: 05_state.md
-        issue: Changes
+        issue: 2
       - type: createPullRequestComment
         body: 05_add-state-variable-activity.md
         file: src/App.jsx
@@ -173,7 +173,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
@@ -185,7 +185,7 @@ steps:
         else:
           - type: respond
             with: 06_bad-state.md
-            issue: Changes
+            issue: 2
       - type: createPullRequestComment
         body: 06_explaining-this-state-activity.md
         file: src/App.jsx
@@ -209,7 +209,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
@@ -221,7 +221,7 @@ steps:
         else:
           - type: respond
             with: 07_bad-function.md
-            issue: Changes
+            issue: 2
       - type: createPullRequestComment
         body: 07_bind-function-activity.md
         file: src/App.jsx
@@ -240,7 +240,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
@@ -252,10 +252,10 @@ steps:
         else:
           - type: respond
             with: 04_bad-uncomment.md
-            issue: Changes
+            issue: 2
       - type: respond
         with: 08_callbackfunctions.md
-        issue: Changes
+        issue: 2
       - type: createPullRequestComment
         body: 08_passing-functions-activity.md
         file: src/App.jsx
@@ -279,7 +279,7 @@ steps:
         operator: ===
         right: refs/heads/changes
       - type: getPullRequest
-        pullRequest: Changes
+        pullRequest: 2
         action_id: metaPR2
       - type: getFileContents
         action_id: fileContents
@@ -291,7 +291,7 @@ steps:
         else:
           - type: respond
             with: 09_bad-replace.md
-            issue: Changes
+            issue: 2
       - type: createPullRequestComment
         body: 09_uncomment-grades-activity.md
         file: src/App.jsx
@@ -318,11 +318,11 @@ steps:
         else:
           - type: respond
             with: 04_bad-uncomment.md
-            issue: Changes
+            issue: 2
       - type: createReview
         event: APPROVE
         body: 10_approve.md
-        pullRequest: Changes
+        pullRequest: 2
 
   # Step 11: Merge pull request
   - title: Merge your pull request
@@ -332,5 +332,5 @@ steps:
     actions:
       - type: respond
         with: 11_congrats.md
-        issue: Changes
+        issue: 2
     
