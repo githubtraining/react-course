@@ -24,7 +24,7 @@ This is where most of your code will go. You'll notice we have `App.jsx` along w
 
 ## Step 1: Set up the project locally
 
-In this repository, we have two branches - `master` and `changes`. We will be working off of the `changes` branch. Let's go ahead and get started.
+In this repository, we have two branches - `main` and `changes`. We will be working off of the `changes` branch. Let's go ahead and get started.
 
 ### :keyboard: Activity: Clone the repository and install Node
 
