@@ -2,7 +2,7 @@
 
 Now that we've approved the changes, it's time to merge the pull request.
 
-### :keyboard: Activity: Merge the `changes` branch into `master`
+### :keyboard: Activity: Merge the `changes` branch into `main`
 
 1. Click the `Merge Pull Request` button
 
